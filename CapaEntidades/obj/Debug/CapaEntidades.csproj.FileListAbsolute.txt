@@ -1,0 +1,5 @@
+C:\Users\Marcio\Desktop\Parroquia\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\Marcio\Desktop\Parroquia\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\Marcio\Desktop\Parroquia\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Marcio\Desktop\Parroquia\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\Marcio\Desktop\Parroquia\CapaEntidades\obj\Debug\CapaEntidades.pdb
