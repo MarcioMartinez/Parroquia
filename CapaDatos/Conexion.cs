@@ -9,7 +9,7 @@ using System.Data;
 
 namespace CapaDatos
 {
-    class Conexion
+    public class Conexion
     {
         public SqlConnection cn;
         public Conexion()

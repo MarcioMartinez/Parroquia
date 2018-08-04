@@ -44,9 +44,15 @@ namespace CapaPresentacion.Formularios
 
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form1 frm = new Form1();
+    
+        }
+
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmGestionFeligres frm = new FrmGestionFeligres();
             frm.MdiParent = this;
             frm.Show();
+            frm.Focus();
         }
     }
 }

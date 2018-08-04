@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CNFeligres.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -47,9 +48,9 @@
       <Project>{4b951e00-ef6c-4a25-8620-4223cb9faf2c}</Project>
       <Name>CapaDatos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
-      <Project>{c05acfa1-4abf-4192-9ebf-a4afaf122f25}</Project>
-      <Name>CapaEntidades</Name>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{ac82eb95-ed8b-476c-afa7-5246a2cf1a98}</Project>
+      <Name>CapaEntidad</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
