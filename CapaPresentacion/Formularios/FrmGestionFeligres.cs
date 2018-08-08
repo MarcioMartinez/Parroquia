@@ -84,7 +84,7 @@ namespace CapaPresentacion.Formularios
                 lueSexo.ErrorText = "Seleccione el sexo";
                 return false;
             }
-            if (String.IsNullOrEmpty(sluePadre.EditValue.ToString().Trim()))
+            /*if (String.IsNullOrEmpty(sluePadre.EditValue.ToString().Trim()))
             {
                 sluePadre.ErrorText = "Seleccione el padre";
                 return false;
@@ -93,7 +93,8 @@ namespace CapaPresentacion.Formularios
             {
                 slueMadre.ErrorText = "Seleccione la madre";
                 return false;
-            }
+            }*/
+            // Lo comenté, por que no es obligatorio.
             return true;
         }
         private void LlenarComboSexo()
@@ -126,7 +127,7 @@ namespace CapaPresentacion.Formularios
                     IdSexo = int.Parse(lueSexo.EditValue.ToString()),
                     NumeroIdentidadPadre = sluePadre.EditValue.ToString(),
                     NumeroIdentidadMadre = slueMadre.EditValue.ToString(),
-                    Estado = true
+                    Estado = chkEstado.Checked
                 };
 
                 if (objInsertarFeligres.NuevoFeligres(objFeligres) > 0)
@@ -157,6 +158,7 @@ namespace CapaPresentacion.Formularios
             lueSexo.EditValue = objFeligres.IdSexo;
             sluePadre.EditValue = objFeligres.NumeroIdentidadPadre.Trim();
             slueMadre.EditValue = objFeligres.NumeroIdentidadMadre.Trim();
+            chkEstado.Checked = objFeligres.Estado;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -177,7 +179,7 @@ namespace CapaPresentacion.Formularios
                     IdSexo = int.Parse(lueSexo.EditValue.ToString()),
                     NumeroIdentidadPadre = sluePadre.EditValue.ToString(),
                     NumeroIdentidadMadre = slueMadre.EditValue.ToString(),
-                    Estado = true
+                    Estado = chkEstado.Checked
                 };
 
                 if (objActualizarFeligres.ActualizarFeligres(objFeligres) > 0)
@@ -224,6 +226,10 @@ namespace CapaPresentacion.Formularios
         private void btnActualizarDatos_Click(object sender, EventArgs e)
         {
             ListadoFeligres();
+            LlenarComboPadres();
+            LlenarComboSexo();
+            Limpiar();
+
         }
 
         private void btnExportarPDF_Click(object sender, EventArgs e)
@@ -247,18 +253,29 @@ namespace CapaPresentacion.Formularios
         }
 
         private void sluePadre_CustomDisplayText_1(object sender, DevExpress.XtraEditors.Controls.CustomDisplayTextEventArgs e)
-        {
-            if (string.IsNullOrEmpty(e.Value.ToString()) || e.Value == null)
+        {   if (e.Value == null)
             {
                 e.DisplayText = sluePadre.Properties.NullText;
+                sluePadre.EditValue = "";
+            }
+            else if (string.IsNullOrEmpty(e.Value.ToString()))
+            {
+                e.DisplayText = sluePadre.Properties.NullText;
+                sluePadre.EditValue = "";
             }
         }
 
         private void slueMadre_CustomDisplayText(object sender, DevExpress.XtraEditors.Controls.CustomDisplayTextEventArgs e)
         {
-            if (string.IsNullOrEmpty(e.Value.ToString()) || e.Value == null)
+            if(e.Value == null)
+            {
+                e.DisplayText = sluePadre.Properties.NullText;
+                slueMadre.EditValue = "";
+            }
+            else if (string.IsNullOrEmpty(e.Value.ToString()))
             {
                 e.DisplayText = slueMadre.Properties.NullText;
+                slueMadre.EditValue = "";
             }
         }
 

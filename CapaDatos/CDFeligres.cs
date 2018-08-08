@@ -17,7 +17,7 @@ namespace CapaDatos
             int resultado;
             try
             {
-                SqlCommand cmd = new SqlCommand("SP_Guardar_Feligres", cn);
+                SqlCommand cmd = new SqlCommand("Sp_Guardar_Feligres", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@Num_Identidad", SqlDbType.Char, 15).Value = objF.NumeroIdentidad;
                 cmd.Parameters.Add("@Nombre", SqlDbType.VarChar, 30).Value = objF.Nombre;
@@ -27,8 +27,22 @@ namespace CapaDatos
                 cmd.Parameters.Add("@Telefono", SqlDbType.Char, 9).Value = objF.Telefono;
                 cmd.Parameters.Add("@Fecha_Nacimiento", SqlDbType.Date).Value = objF.FechaNacimiento;
                 cmd.Parameters.Add("@IdSexo", SqlDbType.Int).Value = objF.IdSexo;
-                cmd.Parameters.Add("@Num_Padre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadPadre;
-                cmd.Parameters.Add("@Num_Madre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadMadre;
+                if (String.IsNullOrEmpty(objF.NumeroIdentidadPadre.Trim()))
+                {
+                    cmd.Parameters.Add("@Num_Padre", SqlDbType.Char, 15).Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.Add("@Num_Padre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadPadre;
+                }
+                if (String.IsNullOrEmpty(objF.NumeroIdentidadMadre.Trim()))
+                {
+                    cmd.Parameters.Add("@Num_Madre", SqlDbType.Char, 15).Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.Add("@Num_Madre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadMadre;
+                }
                 cmd.Parameters.Add("@Estado", SqlDbType.Bit).Value = objF.Estado;
 
                 ConectarBD();
@@ -50,7 +64,7 @@ namespace CapaDatos
             int resultado;
             try
             {
-                SqlCommand cmd = new SqlCommand("SP_Actualizar_Feligres", cn);
+                SqlCommand cmd = new SqlCommand("Sp_Actualizar_Feligres", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@Num_Identidad", SqlDbType.Char, 15).Value = objF.NumeroIdentidad;
                 cmd.Parameters.Add("@Nombre", SqlDbType.VarChar, 30).Value = objF.Nombre;
@@ -60,8 +74,22 @@ namespace CapaDatos
                 cmd.Parameters.Add("@Correo", SqlDbType.VarChar, 30).Value = objF.Correo;
                 cmd.Parameters.Add("@IdSexo", SqlDbType.Int).Value = objF.IdSexo;
                 cmd.Parameters.Add("@Fecha_Nacimiento", SqlDbType.Date).Value = objF.FechaNacimiento;
-                cmd.Parameters.Add("@Num_Identidad_Padre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadPadre;
-                cmd.Parameters.Add("@Num_Identidad_Madre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadMadre;
+                if (String.IsNullOrEmpty(objF.NumeroIdentidadPadre.Trim()))
+                {
+                    cmd.Parameters.Add("@Num_Identidad_Padre", SqlDbType.Char, 15).Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.Add("@Num_Identidad_Padre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadPadre;
+                }
+                if (String.IsNullOrEmpty(objF.NumeroIdentidadMadre.Trim()))
+                {
+                    cmd.Parameters.Add("@Num_Identidad_Madre", SqlDbType.Char, 15).Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.Add("@Num_Identidad_Madre", SqlDbType.Char, 15).Value = objF.NumeroIdentidadMadre;
+                }
                 cmd.Parameters.Add("@Estado", SqlDbType.Bit).Value = objF.Estado;
 
                 ConectarBD();
@@ -83,7 +111,7 @@ namespace CapaDatos
             int resultado = 0;
             try
             {
-                SqlCommand cmd = new SqlCommand("SP_Borrar_Feligres", cn);
+                SqlCommand cmd = new SqlCommand("Sp_Eliminar_Feligres", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@Num_Identidad", SqlDbType.Char, 15).Value = objF.NumeroIdentidad;
 
@@ -109,7 +137,7 @@ namespace CapaDatos
             try
             {
                 ConectarBD();
-                da = new SqlDataAdapter("SP_Seleccionar_TodoFeligres", cn);
+                da = new SqlDataAdapter("Sp_Mostrar_Todo_Feligres", cn);
                 da.Fill(ds, "Feligres");
                 return ds;
             }
@@ -131,7 +159,7 @@ namespace CapaDatos
             try
             {
                 ConectarBD();
-                da = new SqlDataAdapter("SP_Mostrar_Sexo", cn);
+                da = new SqlDataAdapter("Sp_Mostrar_Sexo", cn);
                 da.Fill(ds, "Sexo");
                 return ds;
             }
@@ -153,7 +181,7 @@ namespace CapaDatos
             try
             {
                 ConectarBD();
-                da= new SqlDataAdapter("SP_Feligres_Sexo", cn);
+                da= new SqlDataAdapter("Sp_Feligres_Sexo", cn);
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
                 da.SelectCommand.Parameters.Add("@IdSexo", SqlDbType.Int).Value = idSexo;
                 da.Fill(ds, "Feligres");
@@ -177,7 +205,7 @@ namespace CapaDatos
             try
             {
                 ConectarBD();
-                cmd = new SqlCommand("SP_Mostrar_UnFeligres", cn);
+                cmd = new SqlCommand("Sp_Mostrar_UnFeligres", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@NumeroIdentidad", SqlDbType.Char, 15).Value = numeroIdentidad;
                 dr = cmd.ExecuteReader();
@@ -194,6 +222,7 @@ namespace CapaDatos
                     objFeligres.IdSexo = int.Parse(dr["Id_Sexo"].ToString());
                     objFeligres.NumeroIdentidadPadre = dr["Num_Identidad_Padre"].ToString();
                     objFeligres.NumeroIdentidadMadre = dr["Num_Identidad_Madre"].ToString();
+                    objFeligres.Estado = dr.GetBoolean(10);
                 }
                 return objFeligres;
             }
