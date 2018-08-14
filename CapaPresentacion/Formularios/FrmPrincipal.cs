@@ -40,6 +40,7 @@ namespace CapaPresentacion.Formularios
         {
             Properties.Settings.Default.Tema = DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName;
             Properties.Settings.Default.Save();
+            Application.Exit();
         }
 
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
