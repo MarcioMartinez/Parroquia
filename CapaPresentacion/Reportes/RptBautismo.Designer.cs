@@ -41,8 +41,8 @@
             this.xrlblPadre2 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtR2 = new DevExpress.XtraReports.UI.XRLabel();
             this.XrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
-            this.XrLabel22 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrlblY = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtpp1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtPP2 = new DevExpress.XtraReports.UI.XRLabel();
             this.XrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtR3 = new DevExpress.XtraReports.UI.XRRichText();
             this.txtR4 = new DevExpress.XtraReports.UI.XRRichText();
@@ -81,8 +81,8 @@
             this.xrlblPadre2,
             this.txtR2,
             this.XrLabel16,
-            this.XrLabel22,
-            this.xrlblY,
+            this.txtpp1,
+            this.txtPP2,
             this.XrLabel24,
             this.txtR3,
             this.txtR4,
@@ -196,25 +196,25 @@
             this.XrLabel16.StylePriority.UseFont = false;
             this.XrLabel16.Text = "Se encuentra la partida que dice:";
             // 
-            // XrLabel22
+            // txtpp1
             // 
-            this.XrLabel22.Font = new System.Drawing.Font("Arial", 12F);
-            this.XrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(28.28938F, 243.2917F);
-            this.XrLabel22.Name = "XrLabel22";
-            this.XrLabel22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel22.SizeF = new System.Drawing.SizeF(58.33334F, 23F);
-            this.XrLabel22.StylePriority.UseFont = false;
-            this.XrLabel22.Text = "Hijo de";
+            this.txtpp1.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtpp1.LocationFloat = new DevExpress.Utils.PointFloat(28.28938F, 243.2917F);
+            this.txtpp1.Name = "txtpp1";
+            this.txtpp1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.txtpp1.SizeF = new System.Drawing.SizeF(58.33334F, 23F);
+            this.txtpp1.StylePriority.UseFont = false;
+            this.txtpp1.Text = "Hijo de";
             // 
-            // xrlblY
+            // txtPP2
             // 
-            this.xrlblY.Font = new System.Drawing.Font("Arial", 12F);
-            this.xrlblY.LocationFloat = new DevExpress.Utils.PointFloat(27.39573F, 266.2917F);
-            this.xrlblY.Name = "xrlblY";
-            this.xrlblY.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrlblY.SizeF = new System.Drawing.SizeF(39.58333F, 23F);
-            this.xrlblY.StylePriority.UseFont = false;
-            this.xrlblY.Text = "y de";
+            this.txtPP2.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtPP2.LocationFloat = new DevExpress.Utils.PointFloat(27.39573F, 266.2917F);
+            this.txtPP2.Name = "txtPP2";
+            this.txtPP2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.txtPP2.SizeF = new System.Drawing.SizeF(39.58333F, 23F);
+            this.txtPP2.StylePriority.UseFont = false;
+            this.txtPP2.Text = "y de";
             // 
             // XrLabel24
             // 
@@ -395,8 +395,8 @@
         internal DevExpress.XtraReports.UI.XRLabel xrlblPadre2;
         internal DevExpress.XtraReports.UI.XRLabel txtR2;
         internal DevExpress.XtraReports.UI.XRLabel XrLabel16;
-        internal DevExpress.XtraReports.UI.XRLabel XrLabel22;
-        internal DevExpress.XtraReports.UI.XRLabel xrlblY;
+        internal DevExpress.XtraReports.UI.XRLabel txtpp1;
+        internal DevExpress.XtraReports.UI.XRLabel txtPP2;
         internal DevExpress.XtraReports.UI.XRLabel XrLabel24;
         internal DevExpress.XtraReports.UI.XRRichText txtR3;
         internal DevExpress.XtraReports.UI.XRRichText txtR4;

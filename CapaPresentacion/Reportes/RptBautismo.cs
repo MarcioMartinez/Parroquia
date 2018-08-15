@@ -33,8 +33,32 @@ namespace CapaPresentacion.Reportes
             txtR5.Rtf = txtR5.Rtf.Replace("p19", objx.Empleado);
             txtR6.Text = objx.Feligres;
             txtR7.Rtf = txtR7.Rtf.Replace("p9", objx.FechaNacimiento.Day.ToString()).Replace("p10", objx.FechaNacimiento.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"))).Replace("p11", objx.FechaNacimiento.Year.ToString());
-            xrlblPadre1.Text = objx.Padre;
-            xrlblPadre2.Text = objx.Madre;
+
+
+            if (objx.Padre.Trim().Equals("") && objx.Madre.Trim().Equals(""))
+            {
+                txtPP2.Visible = false;
+                xrlblPadre2.Visible = false;
+                txtpp1.Visible = false;
+                xrlblPadre2.Visible = false;
+            }
+            if (objx.Padre.Trim().Equals("")){
+                txtPP2.Visible = false;
+                xrlblPadre2.Visible = false;
+                xrlblPadre1.Text = objx.Madre;
+            }
+            else if (objx.Madre.Trim().Equals(""))
+            {
+                txtPP2.Visible = false;
+                xrlblPadre2.Visible = false;
+                xrlblPadre1.Text = objx.Padre;
+            }
+            else
+            {
+                xrlblPadre1.Text = objx.Padre;
+                xrlblPadre2.Text = objx.Madre;
+            }
+
             txtR8.Rtf = txtR8.Rtf.Replace("p14", objx.Madrina).Replace("p15", objx.Padrino);
             txtHoy.Text = txtHoy.Text.Replace("p16", objx.Hoy.Day.ToString()).Replace("p17", objx.Hoy.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"))).Replace("p18", objx.Hoy.Year.ToString());
             if (objx.Logo != null)
