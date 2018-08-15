@@ -14,5 +14,6 @@ namespace CapaEntidad
         public String Telefono { get; set; }
         public int Id_Usuario { get; set; }
         public Byte[] Logo { get; set; }
+        public Boolean Usa_Logo { get; set; }
     }
 }

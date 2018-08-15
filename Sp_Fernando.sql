@@ -306,3 +306,89 @@ AS
       WHERE Usuario = @Usuario AND Contraseña = @Contrasena AND Estado = 1
   END
 GO
+
+--Procedimiento almacenado de Reporte de Bautismo
+
+ALTER PROCEDURE Sp_Reporte_Bautismo
+	@Id_Registro INT
+AS
+	BEGIN
+		SET NOCOUNT ON
+		DECLARE @Feligres NVARCHAR(50) = (SELECT CONCAT(f.Nombre, ' ', f.Apellido) 
+                                   FROM SacramentoXFeligres sx INNER JOIN Feligres f 
+                                                               ON sx.Feligres_Num_Identidad = f.Num_Identidad 
+                                   WHERE sx.Id_Registro_Sacramento = @Id_Registro)
+		
+		DECLARE @Madre NVARCHAR(50) = (SELECT CONCAT(FM.Nombre, ' ', FM.Apellido)
+									   FROM SacramentoXFeligres SX inner join Feligres F
+																   ON SX.Feligres_Num_Identidad = F.Num_Identidad
+																   INNER JOIN Feligres FM
+																   ON F.Num_Identidad_Madre = FM.Num_Identidad
+								       WHERE Id_Registro_Sacramento = @Id_Registro)
+		DECLARE @Padre NVARCHAR(50) = (SELECT CONCAT(FP.Nombre, ' ', FP.Apellido)
+									   FROM SacramentoXFeligres SX inner join Feligres F
+																   ON SX.Feligres_Num_Identidad = F.Num_Identidad
+																   INNER JOIN Feligres FP
+																   ON F.Num_Identidad_Padre = FP.Num_Identidad
+								       WHERE Id_Registro_Sacramento = @Id_Registro)
+
+		DECLARE @Madrina NVARCHAR(50) = (SELECT CONCAT(F.Nombre, ' ', F.Apellido)
+									     FROM PadrinoXSacramento PS INNER JOIN Feligres F
+																    ON PS.Feligres_Num_Identidad = F.Num_Identidad
+										 WHERE PS.Id_Registro_Sacramento = @Id_Registro AND F.Id_Sexo = 1)
+
+		DECLARE @Padrino NVARCHAR(50) = (SELECT CONCAT(F.Nombre, ' ', F.Apellido)
+									     FROM PadrinoXSacramento PS INNER JOIN Feligres F
+																    ON PS.Feligres_Num_Identidad = F.Num_Identidad
+										 WHERE PS.Id_Registro_Sacramento = @Id_Registro AND F.Id_Sexo = 2)
+
+		DECLARE @Usa_Logo bit = (SELECT dg.Usa_Logo FROM DatosGenerales dg)
+
+		SELECT L.Lugar, CONCAT(E.Nombre, ' ', E.Apellido) AS Empleado, S.Sacramento, R.Numero_Libro, R.Numero_Pagina,
+			   R.Numero_Acta, R.Fecha, @Feligres AS Feligres, F.Fecha_Nacimiento, @Padre as Padre , @Madre as Madre, @Padrino AS Padrino, @Madrina AS Madrina, GETDATE() AS Hoy, @Usa_Logo AS Usa_Logo, (SELECT dg.Logo FROM DatosGenerales dg) AS Logo
+		FROM Registrosacramento R INNER JOIN SacramentoXFeligres SF
+								  ON R.Id_Registro_Sacramento = SF.Id_Registro_Sacramento
+								  INNER JOIN Empleado E
+								  ON R.Num_Identidad = E.Num_Identidad
+								  INNER JOIN Sacramento S
+								  ON R.Id_Sacramento = S.Id_Sacramento
+								  INNER JOIN Lugar L
+								  ON R.Id_Lugar = L.Id_Lugar	
+								  INNER JOIN Feligres F
+								  ON SF.Feligres_Num_Identidad = F.Num_Identidad
+		WHERE R.Id_Registro_Sacramento = @Id_Registro
+	END
+GO
+
+CREATE PROCEDURE Sp_Reporte_Confirmacion
+	@Id_Registro INT
+AS
+	BEGIN
+		SET NOCOUNT ON
+		DECLARE @Madrina NVARCHAR(50) = (SELECT CONCAT(F.Nombre, ' ', F.Apellido)
+									     FROM PadrinoXSacramento PS INNER JOIN Feligres F
+																    ON PS.Feligres_Num_Identidad = F.Num_Identidad
+										 WHERE PS.Id_Registro_Sacramento = @Id_Registro AND F.Id_Sexo = 1)
+
+		DECLARE @Padrino NVARCHAR(50) = (SELECT CONCAT(F.Nombre, ' ', F.Apellido)
+									     FROM PadrinoXSacramento PS INNER JOIN Feligres F
+																    ON PS.Feligres_Num_Identidad = F.Num_Identidad
+										 WHERE PS.Id_Registro_Sacramento = @Id_Registro AND F.Id_Sexo = 2)
+
+		DECLARE @Usa_Logo bit = (SELECT dg.Usa_Logo FROM DatosGenerales dg)
+
+		SELECT L.Lugar, CONCAT(E.Nombre, ' ', E.Apellido) AS Empleado, R.Fecha, CONCAT(F.Nombre, ' ' , F.Apellido) AS Feligres, @Padrino AS Padrino, @Madrina AS Madrina, GETDATE() AS Hoy, @Usa_Logo AS Usa_Logo, (SELECT dg.Logo FROM DatosGenerales dg) AS Logo
+		FROM Registrosacramento R
+							   INNER JOIN SacramentoXFeligres SF
+							   ON R.Id_Registro_Sacramento = SF.Id_Registro_Sacramento
+							   INNER JOIN Empleado E
+							   ON R.Num_Identidad = E.Num_Identidad
+							   INNER JOIN Feligres F
+							   ON SF.Feligres_Num_Identidad = F.Num_Identidad
+							   INNER JOIN Lugar L
+							   ON R.Id_Lugar = L.Id_Lugar		
+		WHERE R.Id_Registro_Sacramento = @Id_Registro
+	END
+GO
+
+exec Sp_Reporte_Confirmacion 83

@@ -25,6 +25,7 @@ namespace CapaDatos
                 cmd.Parameters.Add("@Telefono", SqlDbType.Char, 9).Value = objDG.Telefono;
                 cmd.Parameters.Add("@Id_Usuario", SqlDbType.Int).Value = objDG.Id_Usuario;
                 cmd.Parameters.Add("@Logo", SqlDbType.Image).Value = objDG.Logo;
+                cmd.Parameters.Add("@Usa_Logo", SqlDbType.Bit).Value = objDG.Usa_Logo;
 
                 ConectarBD();
                 resultado = cmd.ExecuteNonQuery();
@@ -64,6 +65,7 @@ namespace CapaDatos
                     objD.Telefono = dr["Telefono"].ToString();
                     objD.Telefono = dr["Telefono"].ToString();
                     objD.Logo = (byte[])dr["Logo"];
+                    objD.Usa_Logo = Boolean.Parse(dr["Usa_Logo"].ToString());
                 }
 
                 return objD;

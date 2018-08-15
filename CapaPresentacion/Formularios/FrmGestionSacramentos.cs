@@ -612,6 +612,18 @@ namespace CapaPresentacion.Formularios
                 Reportes.RptPrimeraComunion reporte = new Reportes.RptPrimeraComunion(obj);
                 Funciones.Funciones.MostrarReportes("Reporte de Primera comunión", reporte, this.MdiParent, false);
             }
+            else if (sacramento.Equals("Bautismo"))
+            {
+                CERptBautismo obj = objR.MostrarReporteBautismo(idRegistro);
+                Reportes.RptBautismo reporte = new Reportes.RptBautismo(obj);
+                Funciones.Funciones.MostrarReportes("Reporte de Bautismo", reporte, this.MdiParent, false);
+            }
+            else
+            {
+                CERptConfirmacion obj = objR.MostrarReporteConfirmacion(idRegistro);
+                Reportes.RptConfirmacion reporte = new Reportes.RptConfirmacion(obj);
+                Funciones.Funciones.MostrarReportes("Reporte de Confirmación", reporte, this.MdiParent, false);
+            }
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)

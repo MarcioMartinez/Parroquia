@@ -40,6 +40,8 @@ namespace CapaPresentacion.Formularios
 
             MemoryStream ms = new MemoryStream((byte[])objDatosG.Logo);
             pELogo.Image = Image.FromStream(ms);
+
+            cEUsarLogo.Checked = objDatosG.Usa_Logo;
         }
         private void HabilitarControles(Boolean guardar, Boolean cancelar, Boolean group)
         {
@@ -116,7 +118,8 @@ namespace CapaPresentacion.Formularios
                     Direccion = meDireccion.Text.Trim(),
                     Telefono = txtTelefono.Text.Trim(),
                     Id_Usuario = Convert.ToInt32(6),
-                    Logo = ms.GetBuffer()
+                    Logo = ms.GetBuffer(),
+                    Usa_Logo = cEUsarLogo.Checked
                 };
 
                 if (objNegocioDatos.Guardar_Datos_Generales(objDatosG) > 0)
