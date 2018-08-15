@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CNEmpleado.cs" />
     <Compile Include="CNFeligres.cs" />
     <Compile Include="CNLogin.cs" />
+    <Compile Include="CNLugar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

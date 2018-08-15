@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CDEmpleado.cs" />
     <Compile Include="CDFeligres.cs" />
     <Compile Include="CDLogin.cs" />
+    <Compile Include="CDLugar.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

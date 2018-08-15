@@ -55,5 +55,27 @@ namespace CapaPresentacion.Formularios
             frm.Show();
             frm.Focus();
         }
+
+        private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmGestionEmpleado frm = new FrmGestionEmpleado();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
+
+        private void barButtonItem2_ItemClick_1(object sender, ItemClickEventArgs e)
+        {
+            FrmGestionLugar frm = new FrmGestionLugar();
+            frm.ShowDialog();
+            frm.Focus();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmInfo frm = new FrmInfo();
+            frm.ShowDialog();
+            frm.Focus();
+        }
     }
 }
