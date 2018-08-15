@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress;
 using DevExpress.XtraBars.Helpers;
+using CapaEntidad;
+using CapaNegocio;
+using System.IO;
 
 namespace CapaPresentacion.Formularios
 {
@@ -32,8 +35,8 @@ namespace CapaPresentacion.Formularios
             {
                 DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = Properties.Settings.Default.Tema.Trim();
             }
-           
-      
+
+            CargarDatosGenerales();
         }
 
         private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
@@ -41,6 +44,19 @@ namespace CapaPresentacion.Formularios
             Properties.Settings.Default.Tema = DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName;
             Properties.Settings.Default.Save();
             Application.Exit();
+        }
+        private void CargarDatosGenerales()
+        {
+            CNDatosGenerales objDatos = new CNDatosGenerales();
+            CEDatosGenerales objDatosG = new CEDatosGenerales();
+
+            objDatosG = objDatos.Mostrar_Datos();
+
+            lblNombreParroquia.Text = "Parroquia " + objDatosG.Nombre_Parroquia;
+            this.Text = objDatosG.Nombre_Parroquia;
+
+            MemoryStream ms = new MemoryStream((byte[])objDatosG.Logo);
+            pELogo.Image = Image.FromStream(ms);
         }
 
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
@@ -50,6 +66,8 @@ namespace CapaPresentacion.Formularios
 
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
         {
+            pELogo.Visible = false;
+            lblNombreParroquia.Visible = false;
             FrmGestionFeligres frm = new FrmGestionFeligres();
             frm.MdiParent = this;
             frm.Show();
@@ -58,6 +76,8 @@ namespace CapaPresentacion.Formularios
 
         private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
         {
+            pELogo.Visible = false;
+            lblNombreParroquia.Visible = false;
             FrmGestionEmpleado frm = new FrmGestionEmpleado();
             frm.MdiParent = this;
             frm.Show();
@@ -75,6 +95,32 @@ namespace CapaPresentacion.Formularios
         {
             FrmInfo frm = new FrmInfo();
             frm.ShowDialog();
+            frm.Focus();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            pELogo.Visible = false;
+            lblNombreParroquia.Visible = false;
+            FrmGestionCargo frm = new FrmGestionCargo();
+            frm.ShowDialog();
+            frm.Focus();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmDatosGenerales frm = new FrmDatosGenerales();
+            frm.ShowDialog();
+            frm.Focus();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            pELogo.Visible = false;
+            lblNombreParroquia.Visible = false;
+            FrmGestionSacramentos frm = new FrmGestionSacramentos();
+            frm.MdiParent = this;
+            frm.Show();
             frm.Focus();
         }
     }

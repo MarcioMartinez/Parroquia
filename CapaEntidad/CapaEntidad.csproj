@@ -40,14 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CECargo.cs" />
+    <Compile Include="CEDatosGenerales.cs" />
     <Compile Include="CEEmpleado.cs" />
     <Compile Include="CEFeligres.cs" />
     <Compile Include="CELogin.cs" />
     <Compile Include="CELugar.cs" />
+    <Compile Include="CEPadrinoPorFeligres.cs" />
     <Compile Include="CERptBautismo.cs" />
     <Compile Include="CERptConfirmacion.cs" />
     <Compile Include="CERptMatrimonio.cs" />
     <Compile Include="CERptPrimeraComunion.cs" />
+    <Compile Include="CESacramento.cs" />
+    <Compile Include="CESacramentoPorFeligres.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

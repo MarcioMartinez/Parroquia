@@ -67,17 +67,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FrmDatosGenerales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmDatosGenerales.Designer.cs">
+      <DependentUpon>FrmDatosGenerales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmGestionCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmGestionCargo.designer.cs">
+      <DependentUpon>FrmGestionCargo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmGestionFeligres.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmGestionFeligres.Designer.cs">
       <DependentUpon>FrmGestionFeligres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmGestionSacramentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmGestionSacramentos.designer.cs">
+      <DependentUpon>FrmGestionSacramentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmMatrimonio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMatrimonio.designer.cs">
+      <DependentUpon>FrmMatrimonio.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -136,11 +160,23 @@
     <Compile Include="Reportes\RptPrimeraComunion.Designer.cs">
       <DependentUpon>RptPrimeraComunion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\FrmDatosGenerales.resx">
+      <DependentUpon>FrmDatosGenerales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmGestionCargo.resx">
+      <DependentUpon>FrmGestionCargo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmGestionFeligres.resx">
       <DependentUpon>FrmGestionFeligres.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmGestionSacramentos.resx">
+      <DependentUpon>FrmGestionSacramentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMatrimonio.resx">
+      <DependentUpon>FrmMatrimonio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -163,6 +199,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reportes\FrmModeloReportes.resx">
       <DependentUpon>FrmModeloReportes.cs</DependentUpon>
@@ -206,6 +243,8 @@
       <Name>CapaNegocio</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\general.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,10 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CNCargo.cs" />
+    <Compile Include="CNDatosGenerales.cs" />
     <Compile Include="CNEmpleado.cs" />
     <Compile Include="CNFeligres.cs" />
     <Compile Include="CNLogin.cs" />
     <Compile Include="CNLugar.cs" />
+    <Compile Include="CNSacramento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
