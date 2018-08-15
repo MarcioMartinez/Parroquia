@@ -12,3 +12,10 @@ C:\Users\Walter\Documents\GitHub\Parroquia\CapaDatos\bin\Debug\CapaEntidad.pdb
 C:\Users\Walter\Documents\GitHub\Parroquia\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\Walter\Documents\GitHub\Parroquia\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Walter\Documents\GitHub\Parroquia\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Marcio\Desktop\Parroquia\Parroquia\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Marcio\Desktop\Parroquia\Parroquia\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Marcio\Desktop\Parroquia\Parroquia\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\Marcio\Desktop\Parroquia\Parroquia\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\Marcio\Desktop\Parroquia\Parroquia\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Marcio\Desktop\Parroquia\Parroquia\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Marcio\Desktop\Parroquia\Parroquia\CapaDatos\obj\Debug\CapaDatos.pdb

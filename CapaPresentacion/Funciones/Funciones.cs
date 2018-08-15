@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using DevExpress.XtraPrinting;
 using System.Windows.Forms;
 using System.Diagnostics;
+using DevExpress.XtraReports.UI;
 
 namespace CapaPresentacion.Funciones
 {
@@ -53,6 +54,32 @@ namespace CapaPresentacion.Funciones
             {
 
                 throw new Exception("Error al generar el archivo", ex);
+            }
+        }
+
+        public static void MostrarReportes(String titulo, XtraReport reporte, Form MDIParent, Boolean ocultarMenu) {
+            Reportes.FrmModeloReportes vistaPrevia = new Reportes.FrmModeloReportes();
+            vistaPrevia.HideToolBars = ocultarMenu;
+            vistaPrevia.Text = titulo;
+            vistaPrevia.MdiParent = MDIParent;
+            vistaPrevia.setReporte(reporte);
+            vistaPrevia.Show();
+            vistaPrevia.Focus();
+        }
+        public static string Hash(string input)
+        {
+            using (SHA1Managed sha1 = new SHA1Managed())
+            {
+                var hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(input));
+                var sb = new StringBuilder(hash.Length * 2);
+
+                foreach (byte b in hash)
+                {
+                    // can be "x2" if you want lowercase
+                    sb.Append(b.ToString("X2"));
+                }
+
+                return sb.ToString();
             }
         }
     }
