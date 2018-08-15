@@ -66,8 +66,7 @@ namespace CapaPresentacion.Formularios
 
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
         {
-            pELogo.Visible = false;
-            lblNombreParroquia.Visible = false;
+
             FrmGestionFeligres frm = new FrmGestionFeligres();
             frm.MdiParent = this;
             frm.Show();
@@ -76,8 +75,7 @@ namespace CapaPresentacion.Formularios
 
         private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
         {
-            pELogo.Visible = false;
-            lblNombreParroquia.Visible = false;
+    
             FrmGestionEmpleado frm = new FrmGestionEmpleado();
             frm.MdiParent = this;
             frm.Show();
@@ -100,8 +98,7 @@ namespace CapaPresentacion.Formularios
 
         private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
         {
-            pELogo.Visible = false;
-            lblNombreParroquia.Visible = false;
+ 
             FrmGestionCargo frm = new FrmGestionCargo();
             frm.ShowDialog();
             frm.Focus();
@@ -116,12 +113,34 @@ namespace CapaPresentacion.Formularios
 
         private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
         {
-            pELogo.Visible = false;
-            lblNombreParroquia.Visible = false;
             FrmGestionSacramentos frm = new FrmGestionSacramentos();
             frm.MdiParent = this;
             frm.Show();
             frm.Focus();
+        }
+
+        private void xtraTabbedMdiManager1_PageAdded(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
+        {
+            if(xtraTabbedMdiManager1.Pages.Count > 0)
+            {
+                pcLogo.Visible = false;
+            }
+            else
+            {
+                pcLogo.Visible = true;
+            }
+        }
+
+        private void xtraTabbedMdiManager1_PageRemoved(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
+        {
+            if (xtraTabbedMdiManager1.Pages.Count > 0)
+            {
+                pcLogo.Visible = false;
+            }
+            else
+            {
+                pcLogo.Visible = true;
+            }
         }
     }
 }

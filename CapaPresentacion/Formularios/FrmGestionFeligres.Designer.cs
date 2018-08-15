@@ -45,6 +45,7 @@
             this.colTelefono = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEstado = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcDatos = new DevExpress.XtraEditors.GroupControl();
+            this.chkEstado = new DevExpress.XtraEditors.CheckEdit();
             this.slueMadre = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -79,12 +80,12 @@
             this.btnExportarExcel = new DevExpress.XtraEditors.SimpleButton();
             this.btnVistaPrevia = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.chkEstado = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDatosFeligres)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvDatosFeligres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDatos)).BeginInit();
             this.gcDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkEstado.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slueMadre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sluePadre.Properties)).BeginInit();
@@ -102,7 +103,6 @@
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chkEstado.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnActualizar
@@ -165,19 +165,19 @@
             this.editarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -317,6 +317,17 @@
             this.gcDatos.Size = new System.Drawing.Size(530, 443);
             this.gcDatos.TabIndex = 149;
             this.gcDatos.Text = "Datos del Feligres";
+            // 
+            // chkEstado
+            // 
+            this.chkEstado.Location = new System.Drawing.Point(116, 416);
+            this.chkEstado.Name = "chkEstado";
+            this.chkEstado.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEstado.Properties.Appearance.Options.UseFont = true;
+            this.chkEstado.Properties.Caption = "Estado";
+            this.chkEstado.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.chkEstado.Size = new System.Drawing.Size(111, 23);
+            this.chkEstado.TabIndex = 191;
             // 
             // slueMadre
             // 
@@ -748,17 +759,6 @@
             this.panelControl2.Size = new System.Drawing.Size(530, 64);
             this.panelControl2.TabIndex = 173;
             // 
-            // chkEstado
-            // 
-            this.chkEstado.Location = new System.Drawing.Point(116, 416);
-            this.chkEstado.Name = "chkEstado";
-            this.chkEstado.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEstado.Properties.Appearance.Options.UseFont = true;
-            this.chkEstado.Properties.Caption = "Estado";
-            this.chkEstado.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.chkEstado.Size = new System.Drawing.Size(111, 23);
-            this.chkEstado.TabIndex = 191;
-            // 
             // FrmGestionFeligres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -777,6 +777,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcDatos)).EndInit();
             this.gcDatos.ResumeLayout(false);
             this.gcDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkEstado.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slueMadre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sluePadre.Properties)).EndInit();
@@ -794,7 +795,6 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chkEstado.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

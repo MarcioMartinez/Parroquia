@@ -322,7 +322,7 @@ namespace CapaPresentacion.Formularios
                         Numero_Libro = int.Parse(txtNumLibro.EditValue.ToString()),
                         Numero_Pagina = int.Parse(txtNumPagina.EditValue.ToString()),
                         Numero_Acta = int.Parse(txtNumActa.EditValue.ToString()),
-                        Id_Usuario = 6
+                        Id_Usuario = Funciones.Funciones.idUsuario
                     };
 
                     idRegistro = objInsertarRegistro.NuevoRegistroSacramento(objSacramento);
@@ -456,7 +456,7 @@ namespace CapaPresentacion.Formularios
                     Numero_Libro = int.Parse(txtNumLibro.EditValue.ToString()),
                     Numero_Pagina = int.Parse(txtNumPagina.EditValue.ToString()),
                     Numero_Acta = int.Parse(txtNumActa.EditValue.ToString()),
-                    Id_Usuario = 6
+                    Id_Usuario = Funciones.Funciones.idUsuario
                 };
                 
                 idRegistro = int.Parse(txtIdRegistro.EditValue.ToString());

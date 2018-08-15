@@ -95,6 +95,17 @@ namespace CapaPresentacion.Formularios
                 return false;
             }*/
             // Lo comenté, por que no es obligatorio.
+
+            if (sluePadre.EditValue.ToString().Trim().Equals(txtNumeroIdentidad.EditValue.ToString()))
+            {
+                sluePadre.ErrorText = "Seleccione un padre correcto";
+                return false;
+            }
+            if (slueMadre.EditValue.ToString().Trim().Equals(txtNumeroIdentidad.EditValue.ToString()))
+            {
+                slueMadre.ErrorText = "Seleccione una madre correcto";
+                return false;
+            }
             return true;
         }
         private void LlenarComboSexo()
@@ -186,6 +197,7 @@ namespace CapaPresentacion.Formularios
                 {
                     Limpiar();
                     HabilitarControles(true, false, false, false, false, true);
+                    txtNumeroIdentidad.Enabled = !false;
                     ListadoFeligres();
                     XtraMessageBox.Show("Registro actualizado satisfactoriamente", "Parroquia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -221,6 +233,7 @@ namespace CapaPresentacion.Formularios
             String id = gvDatosFeligres.GetRowCellValue(gvDatosFeligres.FocusedRowHandle, colNumIdentidad).ToString();
             MostrarFeligres(id);
             HabilitarControles(false, false, true, true, true, false);
+            txtNumeroIdentidad.Enabled = false;
         }
 
         private void btnActualizarDatos_Click(object sender, EventArgs e)
@@ -289,6 +302,7 @@ namespace CapaPresentacion.Formularios
         {
             Limpiar();
             HabilitarControles(true, false, false, false, false, true);
+            txtNumeroIdentidad.Enabled = !false;
         }
     }
 }

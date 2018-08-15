@@ -43,3 +43,12 @@ C:\Users\Marcio\Desktop\SISTEMA PARROQUIA\Parroquia\CapaNegocio\bin\Debug\CapaEn
 C:\Users\Marcio\Desktop\SISTEMA PARROQUIA\Parroquia\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Marcio\Desktop\SISTEMA PARROQUIA\Parroquia\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Marcio\Desktop\SISTEMA PARROQUIA\Parroquia\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Marcio\Desktop\SRS\Parroquia\CapaNegocio\obj\Debug\CapaNegocio.pdb

@@ -11,7 +11,7 @@ namespace CapaNegocio
     public class CNLogin
     {
         CDLogin objL = new CDLogin();
-        public Boolean IniciarSesion(CELogin objLogin)
+        public int IniciarSesion(CELogin objLogin)
         {
             return objL.IniciarSesion(objLogin);
         }

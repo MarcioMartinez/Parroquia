@@ -60,9 +60,11 @@ namespace CapaPresentacion.Formularios
                     Contrasena = txtContrasena.Text.Trim().Replace("'", "")
                 };
 
-                if (objIniciarSesion.IniciarSesion(objLogin))
+                if (objIniciarSesion.IniciarSesion(objLogin) > 0)
                 {
+                    Funciones.Funciones.idUsuario = objIniciarSesion.IniciarSesion(objLogin);
                     FrmPrincipal frm = new FrmPrincipal();
+                    frm.txtUsuario.Caption = txtUsuario.Text.ToString().ToUpper();
                     frm.Show();
                     this.Hide();
                 }

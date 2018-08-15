@@ -41,6 +41,7 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.txtUsuario = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -55,10 +56,14 @@
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.lblNombreParroquia = new DevExpress.XtraEditors.LabelControl();
             this.pELogo = new DevExpress.XtraEditors.PictureEdit();
+            this.BarButtonUsuario = new DevExpress.XtraBars.BarButtonItem();
+            this.pcLogo = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pELogo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).BeginInit();
+            this.pcLogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -75,16 +80,17 @@
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.barButtonItem7});
+            this.barButtonItem7,
+            this.txtUsuario});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 9;
+            this.ribbon.MaxItemId = 10;
             this.ribbon.Name = "ribbon";
             this.ribbon.PageHeaderItemLinks.Add(this.barButtonItem4);
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2});
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007;
-            this.ribbon.Size = new System.Drawing.Size(1116, 149);
+            this.ribbon.Size = new System.Drawing.Size(1219, 149);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // applicationMenu1
@@ -169,6 +175,13 @@
             this.barButtonItem7.Name = "barButtonItem7";
             this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Caption = "Usuario";
+            this.txtUsuario.Id = 9;
+            this.txtUsuario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("txtUsuario.ImageOptions.Image")));
+            this.txtUsuario.Name = "txtUsuario";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -228,10 +241,11 @@
             // 
             // ribbonStatusBar
             // 
+            this.ribbonStatusBar.ItemLinks.Add(this.txtUsuario);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 687);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1116, 23);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1219, 23);
             // 
             // defaultLookAndFeel1
             // 
@@ -241,6 +255,8 @@
             // 
             this.xtraTabbedMdiManager1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPagesAndTabControlHeader;
             this.xtraTabbedMdiManager1.MdiParent = this;
+            this.xtraTabbedMdiManager1.PageAdded += new DevExpress.XtraTabbedMdi.MdiTabPageEventHandler(this.xtraTabbedMdiManager1_PageAdded);
+            this.xtraTabbedMdiManager1.PageRemoved += new DevExpress.XtraTabbedMdi.MdiTabPageEventHandler(this.xtraTabbedMdiManager1_PageRemoved);
             // 
             // ribbonPage3
             // 
@@ -254,32 +270,51 @@
             this.lblNombreParroquia.Appearance.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreParroquia.Appearance.Options.UseBackColor = true;
             this.lblNombreParroquia.Appearance.Options.UseFont = true;
-            this.lblNombreParroquia.Location = new System.Drawing.Point(486, 186);
+            this.lblNombreParroquia.Appearance.Options.UseTextOptions = true;
+            this.lblNombreParroquia.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblNombreParroquia.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblNombreParroquia.Location = new System.Drawing.Point(41, 19);
             this.lblNombreParroquia.Name = "lblNombreParroquia";
-            this.lblNombreParroquia.Size = new System.Drawing.Size(322, 33);
+            this.lblNombreParroquia.Size = new System.Drawing.Size(408, 33);
             this.lblNombreParroquia.TabIndex = 6;
             this.lblNombreParroquia.Text = "Nombre de la parroquia";
             // 
             // pELogo
             // 
             this.pELogo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pELogo.Location = new System.Drawing.Point(445, 239);
+            this.pELogo.Location = new System.Drawing.Point(41, 71);
             this.pELogo.MenuManager = this.ribbon;
             this.pELogo.Name = "pELogo";
             this.pELogo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pELogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pELogo.Properties.ZoomAccelerationFactor = 1D;
-            this.pELogo.Size = new System.Drawing.Size(408, 418);
+            this.pELogo.Size = new System.Drawing.Size(408, 405);
             this.pELogo.TabIndex = 5;
+            // 
+            // BarButtonUsuario
+            // 
+            this.BarButtonUsuario.Caption = "Usuario";
+            this.BarButtonUsuario.Id = 2;
+            this.BarButtonUsuario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarButtonUsuario.ImageOptions.Image")));
+            this.BarButtonUsuario.Name = "BarButtonUsuario";
+            // 
+            // pcLogo
+            // 
+            this.pcLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pcLogo.Controls.Add(this.pELogo);
+            this.pcLogo.Controls.Add(this.lblNombreParroquia);
+            this.pcLogo.Location = new System.Drawing.Point(360, 155);
+            this.pcLogo.Name = "pcLogo";
+            this.pcLogo.Size = new System.Drawing.Size(495, 506);
+            this.pcLogo.TabIndex = 9;
             // 
             // FrmPrincipal
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1116, 710);
-            this.Controls.Add(this.lblNombreParroquia);
-            this.Controls.Add(this.pELogo);
+            this.ClientSize = new System.Drawing.Size(1219, 710);
+            this.Controls.Add(this.pcLogo);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.IsMdiContainer = true;
@@ -294,6 +329,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pELogo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).EndInit();
+            this.pcLogo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,5 +363,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraEditors.LabelControl lblNombreParroquia;
         private DevExpress.XtraEditors.PictureEdit pELogo;
+        internal DevExpress.XtraBars.BarButtonItem BarButtonUsuario;
+        public DevExpress.XtraBars.BarButtonItem txtUsuario;
+        private DevExpress.XtraEditors.PanelControl pcLogo;
     }
 }

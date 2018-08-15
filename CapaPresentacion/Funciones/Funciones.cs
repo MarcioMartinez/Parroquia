@@ -14,6 +14,7 @@ namespace CapaPresentacion.Funciones
 {
     public class Funciones
     {
+        public static int idUsuario = 0; 
         public static void ExportarExcel(DevExpress.XtraGrid.GridControl grid, String nombre)
         {
             SaveFileDialog archivo = new SaveFileDialog();

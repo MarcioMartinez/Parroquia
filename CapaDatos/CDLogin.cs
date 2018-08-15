@@ -11,7 +11,7 @@ namespace CapaDatos
 {
     public class CDLogin : Conexion
     {
-        public Boolean IniciarSesion(CELogin objLogin)
+        public int IniciarSesion(CELogin objLogin)
         {
             SqlCommand cmd;
             SqlDataReader dr;
@@ -24,11 +24,18 @@ namespace CapaDatos
                 ConectarBD();
                 dr = cmd.ExecuteReader();
 
-                return dr.Read();
+                if (dr.Read())
+                {
+                    return int.Parse(dr["Id_Usuario"].ToString());
+                }
+                else
+                {
+                    return 0;
+                }
             }
             catch (Exception ex)
             {
-                return false;
+                return 0;
                 throw new Exception("Error al iniciar sesion", ex);
             }
             finally
