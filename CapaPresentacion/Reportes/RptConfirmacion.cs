@@ -5,6 +5,7 @@ using System.ComponentModel;
 using DevExpress.XtraReports.UI;
 using CapaEntidad;
 using System.Globalization;
+using System.IO;
 
 namespace CapaPresentacion.Reportes
 {
@@ -38,6 +39,12 @@ namespace CapaPresentacion.Reportes
                 lblSiendo.Text = "Siendo sus padrinos:";
                 xrlblPadrino1.Text = obj.Madrina;
                 xrlblPadrino2.Text = obj.Padrino;
+            }
+
+            if (obj.Logo != null)
+            {
+                MemoryStream ms = new MemoryStream((byte[])obj.Logo);
+                pbLogo.Image = Image.FromStream(ms);
             }
         }
 

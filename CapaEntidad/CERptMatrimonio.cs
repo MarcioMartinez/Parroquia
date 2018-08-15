@@ -11,7 +11,6 @@ namespace CapaEntidad
         public String Parroquia { get; set; }
         public String Empleado { get; set; }   
         public DateTime Fecha { get; set; }
-        public DateTime FechaNacimiento { get; set; }
         public String Novio { get; set; }
         public String Novia { get; set; }
         public String Padrino1 { get; set; }

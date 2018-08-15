@@ -5,6 +5,7 @@ using System.ComponentModel;
 using DevExpress.XtraReports.UI;
 using CapaEntidad;
 using System.Globalization;
+using System.IO;
 
 namespace CapaPresentacion.Reportes
 {
@@ -25,6 +26,11 @@ namespace CapaPresentacion.Reportes
             txtPadrinoNovio.Text = obj.Padrino2;
             txtFecha.Text = obj.Fecha.Day.ToString() + " de " + obj.Fecha.ToString("MMMM", CultureInfo.CreateSpecificCulture("es")) + " del " + obj.Fecha.Year.ToString();
             txtHoy.Rtf = txtHoy.Rtf.Replace("p9", obj.Hoy.Day.ToString()).Replace("p10", obj.Hoy.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"))).Replace("p11", obj.Hoy.Year.ToString());
+            if (obj.Logo != null)
+            {
+                MemoryStream ms = new MemoryStream((byte[])obj.Logo);
+                pbLogo.Image = Image.FromStream(ms);
+            }
         }
 
     }

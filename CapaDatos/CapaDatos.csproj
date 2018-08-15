@@ -48,6 +48,7 @@
     <Compile Include="CDFeligres.cs" />
     <Compile Include="CDLogin.cs" />
     <Compile Include="CDLugar.cs" />
+    <Compile Include="CDReportes.cs" />
     <Compile Include="CDSacramento.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

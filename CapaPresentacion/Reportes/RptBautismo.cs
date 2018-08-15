@@ -5,6 +5,7 @@ using System.ComponentModel;
 using DevExpress.XtraReports.UI;
 using CapaEntidad;
 using System.Globalization;
+using System.IO;
 
 namespace CapaPresentacion.Reportes
 {
@@ -36,7 +37,11 @@ namespace CapaPresentacion.Reportes
             xrlblPadre2.Text = objx.Madre;
             txtR8.Rtf = txtR8.Rtf.Replace("p14", objx.Madrina).Replace("p15", objx.Padrino);
             txtHoy.Text = txtHoy.Text.Replace("p16", objx.Hoy.Day.ToString()).Replace("p17", objx.Hoy.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"))).Replace("p18", objx.Hoy.Year.ToString());
-
+            if (objx.Logo != null)
+            {
+                MemoryStream ms = new MemoryStream((byte[])objx.Logo);
+                pbLogo.Image = Image.FromStream(ms);
+            }
         }
     }
 }

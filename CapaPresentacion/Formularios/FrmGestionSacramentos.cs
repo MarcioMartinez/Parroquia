@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using CapaNegocio;
 using CapaEntidad;
+using CapaDatos;
 namespace CapaPresentacion.Formularios
 {
     public partial class FrmGestionSacramentos : DevExpress.XtraEditors.XtraForm
@@ -594,6 +595,23 @@ namespace CapaPresentacion.Formularios
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int idRegistro = int.Parse(gvDatosSacramentos.GetRowCellValue(gvDatosSacramentos.FocusedRowHandle, colIdRegistroSacramento).ToString());
+            String sacramento = gvDatosSacramentos.GetRowCellValue(gvDatosSacramentos.FocusedRowHandle, colSacramento).ToString();
+
+            CDReportes objR = new CDReportes();
+            if (sacramento.Equals("Matrimonio"))
+            {
+
+                CERptMatrimonio obj = objR.MostrarReporteMatrimonio(idRegistro);
+                Reportes.RptMatrimonio reporte = new Reportes.RptMatrimonio(obj);
+                Funciones.Funciones.MostrarReportes("Reporte de Matrimonio", reporte, this.MdiParent, false);
+            }
+            else if (sacramento.Equals("Primera comunión"))
+            {
+
+                CERptPrimeraComunion obj = objR.MostrarReportePrimeraComunion(idRegistro);
+                Reportes.RptPrimeraComunion reporte = new Reportes.RptPrimeraComunion(obj);
+                Funciones.Funciones.MostrarReportes("Reporte de Primera comunión", reporte, this.MdiParent, false);
+            }
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)
