@@ -57,16 +57,16 @@ namespace CapaPresentacion.Formularios
                 CELogin objLogin = new CELogin()
                 {
                     Usuario = txtUsuario.Text.Trim().Replace("'", ""),
-                    Contrasena = txtContrasena.Text.Trim().Replace("'", "")
+                    Contrasena = Funciones.Funciones.Hash((txtContrasena.Text.Trim().Replace("'", "")))
                 };
 
                 if (objIniciarSesion.IniciarSesion(objLogin) > 0)
                 {
+                    this.Hide();
                     Funciones.Funciones.idUsuario = objIniciarSesion.IniciarSesion(objLogin);
                     FrmPrincipal frm = new FrmPrincipal();
                     frm.txtUsuario.Caption = txtUsuario.Text.ToString().ToUpper();
-                    frm.Show();
-                    this.Hide();
+                    frm.Show();    
                 }
                 else
                 {

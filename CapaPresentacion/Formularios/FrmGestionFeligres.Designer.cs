@@ -169,6 +169,7 @@
             // 
             // editarToolStripMenuItem
             // 
+            this.editarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Edit_48px;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -176,6 +177,7 @@
             // 
             // eliminarToolStripMenuItem
             // 
+            this.eliminarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Cancel_48px;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
@@ -290,6 +292,8 @@
             // 
             // gcDatos
             // 
+            this.gcDatos.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.gcDatos.Appearance.Options.UseBackColor = true;
             this.gcDatos.Controls.Add(this.chkEstado);
             this.gcDatos.Controls.Add(this.slueMadre);
             this.gcDatos.Controls.Add(this.labelControl10);

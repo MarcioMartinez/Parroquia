@@ -33,6 +33,8 @@
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.gcDatos = new DevExpress.XtraEditors.GroupControl();
+            this.cEUsarLogo = new DevExpress.XtraEditors.CheckEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnQuitar = new DevExpress.XtraEditors.SimpleButton();
             this.btnAgregar = new DevExpress.XtraEditors.SimpleButton();
             this.pELogo = new DevExpress.XtraEditors.PictureEdit();
@@ -44,18 +46,16 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.txtIdDato = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.cEUsarLogo = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcDatos)).BeginInit();
             this.gcDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cEUsarLogo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pELogo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.meDireccion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdDato.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cEUsarLogo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl2
@@ -110,6 +110,24 @@
             this.gcDatos.Size = new System.Drawing.Size(584, 470);
             this.gcDatos.TabIndex = 176;
             this.gcDatos.Text = "Datos de la parroquia";
+            // 
+            // cEUsarLogo
+            // 
+            this.cEUsarLogo.Location = new System.Drawing.Point(197, 432);
+            this.cEUsarLogo.Name = "cEUsarLogo";
+            this.cEUsarLogo.Properties.Caption = "Si";
+            this.cEUsarLogo.Size = new System.Drawing.Size(75, 19);
+            this.cEUsarLogo.TabIndex = 223;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(30, 429);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(160, 21);
+            this.labelControl3.TabIndex = 222;
+            this.labelControl3.Text = "Usar logo en reportes";
             // 
             // btnQuitar
             // 
@@ -227,24 +245,6 @@
             this.txtIdDato.TabIndex = 211;
             this.txtIdDato.Visible = false;
             // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(30, 429);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(160, 21);
-            this.labelControl3.TabIndex = 222;
-            this.labelControl3.Text = "Usar logo en reportes";
-            // 
-            // cEUsarLogo
-            // 
-            this.cEUsarLogo.Location = new System.Drawing.Point(197, 432);
-            this.cEUsarLogo.Name = "cEUsarLogo";
-            this.cEUsarLogo.Properties.Caption = "Si";
-            this.cEUsarLogo.Size = new System.Drawing.Size(75, 19);
-            this.cEUsarLogo.TabIndex = 223;
-            // 
             // FrmDatosGenerales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +252,7 @@
             this.ClientSize = new System.Drawing.Size(615, 563);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.gcDatos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmDatosGenerales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos generales";
@@ -261,12 +262,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcDatos)).EndInit();
             this.gcDatos.ResumeLayout(false);
             this.gcDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cEUsarLogo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pELogo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.meDireccion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdDato.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cEUsarLogo.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

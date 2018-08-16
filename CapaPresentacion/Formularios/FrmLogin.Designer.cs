@@ -101,6 +101,7 @@
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.txtUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

@@ -95,7 +95,7 @@
             this.panelControl2.Controls.Add(this.btnGuardar);
             this.panelControl2.Controls.Add(this.btnCancelar);
             this.panelControl2.Controls.Add(this.btnActualizar);
-            this.panelControl2.Location = new System.Drawing.Point(10, 402);
+            this.panelControl2.Location = new System.Drawing.Point(10, 461);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(530, 64);
             this.panelControl2.TabIndex = 177;
@@ -149,7 +149,7 @@
             this.panelControl1.Controls.Add(this.btnExportarPDF);
             this.panelControl1.Controls.Add(this.btnExportarExcel);
             this.panelControl1.Controls.Add(this.btnVistaPrevia);
-            this.panelControl1.Location = new System.Drawing.Point(557, 402);
+            this.panelControl1.Location = new System.Drawing.Point(557, 461);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(785, 64);
             this.panelControl1.TabIndex = 176;
@@ -217,7 +217,7 @@
             this.gcDatos.Enabled = false;
             this.gcDatos.Location = new System.Drawing.Point(10, 11);
             this.gcDatos.Name = "gcDatos";
-            this.gcDatos.Size = new System.Drawing.Size(530, 385);
+            this.gcDatos.Size = new System.Drawing.Size(530, 444);
             this.gcDatos.TabIndex = 175;
             this.gcDatos.Text = "Datos del Empleado";
             // 
@@ -425,7 +425,7 @@
             this.gcDatosEmpleado.Location = new System.Drawing.Point(557, 11);
             this.gcDatosEmpleado.MainView = this.gvDatosEmpleado;
             this.gcDatosEmpleado.Name = "gcDatosEmpleado";
-            this.gcDatosEmpleado.Size = new System.Drawing.Size(785, 385);
+            this.gcDatosEmpleado.Size = new System.Drawing.Size(785, 444);
             this.gcDatosEmpleado.TabIndex = 174;
             this.gcDatosEmpleado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDatosEmpleado});
@@ -440,6 +440,7 @@
             // 
             // editarToolStripMenuItem
             // 
+            this.editarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Edit_48px;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -447,6 +448,7 @@
             // 
             // eliminarToolStripMenuItem
             // 
+            this.eliminarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Cancel_48px;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
@@ -563,7 +565,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1353, 474);
+            this.ClientSize = new System.Drawing.Size(1353, 528);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.gcDatos);

@@ -47,6 +47,7 @@
     <Compile Include="CNLogin.cs" />
     <Compile Include="CNLugar.cs" />
     <Compile Include="CNSacramento.cs" />
+    <Compile Include="CNUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

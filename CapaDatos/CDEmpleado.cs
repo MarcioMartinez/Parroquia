@@ -48,7 +48,7 @@ namespace CapaDatos
             int resultado;
             try
             {
-                SqlCommand cmd = new SqlCommand("Sp_Actualizar_Èmpleado", cn);
+                SqlCommand cmd = new SqlCommand("Sp_Actualizar_Empleado", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@Num_Identidad", SqlDbType.Char, 15).Value = objE.NumeroIdentidad;
                 cmd.Parameters.Add("@Nombre", SqlDbType.VarChar, 30).Value = objE.Nombre;
@@ -165,13 +165,13 @@ namespace CapaDatos
                     objE.Correo = dr["Correo"].ToString();
                     objE.IdCargo = int.Parse(dr["Id_Cargo"].ToString());
                     objE.IdSexo = int.Parse(dr["Id_Sexo"].ToString());
-                    objE.Estado = dr.GetBoolean(10);
+                    objE.Estado = dr.GetBoolean(8);
                 }
                 return objE;
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al solicitar los datos", ex);
+               throw new Exception("Error al solicitar los datos", ex);
             }
             finally
             {

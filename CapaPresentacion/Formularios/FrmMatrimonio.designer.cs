@@ -983,9 +983,9 @@
             this.panelControl2.Controls.Add(this.btnGuardar);
             this.panelControl2.Controls.Add(this.btnCancelar);
             this.panelControl2.Controls.Add(this.btnActualizar);
-            this.panelControl2.Location = new System.Drawing.Point(22, 377);
+            this.panelControl2.Location = new System.Drawing.Point(12, 377);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(884, 64);
+            this.panelControl2.Size = new System.Drawing.Size(894, 64);
             this.panelControl2.TabIndex = 175;
             // 
             // btnNuevo

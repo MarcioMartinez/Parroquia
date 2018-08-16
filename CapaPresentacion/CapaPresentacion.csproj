@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>39191417_2292378327663271_5204588511130288128_n.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -54,6 +57,7 @@
     <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -90,6 +94,12 @@
     </Compile>
     <Compile Include="Formularios\FrmGestionSacramentos.designer.cs">
       <DependentUpon>FrmGestionSacramentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmGestionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmGestionUsuario.Designer.cs">
+      <DependentUpon>FrmGestionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -172,6 +182,9 @@
     <EmbeddedResource Include="Formularios\FrmGestionSacramentos.resx">
       <DependentUpon>FrmGestionSacramentos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmGestionUsuario.resx">
+      <DependentUpon>FrmGestionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +258,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\general.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39191417_2292378327663271_5204588511130288128_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4a128fea-77a0-4e81-b8c3-952be4dc4183.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="39191417_2292378327663271_5204588511130288128_n.ico" />
+    <None Include="Resources\News_48px.png" />
+    <None Include="Resources\Edit_48px.png" />
+    <None Include="Resources\Cancel_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

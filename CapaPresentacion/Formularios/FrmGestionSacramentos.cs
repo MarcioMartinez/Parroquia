@@ -46,7 +46,9 @@ namespace CapaPresentacion.Formularios
 
             lueLugar.Properties.DataSource = objS.ListadoLugar().Tables["Lugar"];
         }
-        
+
+       
+
         private void LlenarGridSacramentos()
         {
             CNSacramento objS = new CNSacramento();
@@ -639,6 +641,12 @@ namespace CapaPresentacion.Formularios
             FrmGestionLugar frm = new FrmGestionLugar();
             frm.ShowDialog();
             frm.Focus();
+        }
+
+        private void FrmGestionSacramentos_Activated(object sender, EventArgs e)
+        {
+            LlenarGridSacramentos();
+            LlenarCombobox();
         }
     }
 }

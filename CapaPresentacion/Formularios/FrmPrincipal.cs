@@ -142,5 +142,18 @@ namespace CapaPresentacion.Formularios
                 pcLogo.Visible = true;
             }
         }
+
+        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmGestionUsuario frm = new FrmGestionUsuario();
+            frm.MdiParent = this;
+            frm.Show();
+            frm.Focus();
+        }
+
+        private void FrmPrincipal_Activated(object sender, EventArgs e)
+        {
+            CargarDatosGenerales();
+        }
     }
 }

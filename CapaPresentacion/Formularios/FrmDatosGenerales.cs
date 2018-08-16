@@ -53,7 +53,7 @@ namespace CapaPresentacion.Formularios
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Archivos de imagen(*.jpg, *.png)|*.jpg; *.png";
+            dialog.Filter = "Archivos de imagen(*.jpg, *.png, *.jpeg)|*.jpg; *.png; *.jpeg";
             DialogResult result = dialog.ShowDialog();
 
             if (result == DialogResult.OK)
