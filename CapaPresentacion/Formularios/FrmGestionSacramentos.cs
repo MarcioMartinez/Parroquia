@@ -31,7 +31,7 @@ namespace CapaPresentacion.Formularios
             madrinaAnterior = "";
         }
 
-        private void LlenarCombobox()
+        public void LlenarCombobox()
         {
             CNSacramento objS = new CNSacramento();
 
@@ -639,6 +639,8 @@ namespace CapaPresentacion.Formularios
         private void simpleButton5_Click(object sender, EventArgs e)
         {
             FrmGestionLugar frm = new FrmGestionLugar();
+            frm.llamado = true;
+            frm.LlenarCbx += new FrmGestionLugar.DoEvent(LlenarCombobox);
             frm.ShowDialog();
             frm.Focus();
         }

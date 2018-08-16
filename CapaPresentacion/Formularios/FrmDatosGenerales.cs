@@ -77,13 +77,7 @@ namespace CapaPresentacion.Formularios
         {
             if (String.IsNullOrEmpty(txtNombre.EditValue.ToString().Trim()))
             {
-                txtNombre.ErrorText = "Ingrese el apellido";
-                return false;
-            }
-
-            if (String.IsNullOrEmpty(txtNombre.EditValue.ToString().Trim()))
-            {
-                txtNombre.ErrorText = "Ingrese el apellido";
+                txtNombre.ErrorText = "Ingrese el nombre de la parroquia";
                 return false;
             }
 

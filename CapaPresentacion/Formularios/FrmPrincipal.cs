@@ -155,5 +155,12 @@ namespace CapaPresentacion.Formularios
         {
             CargarDatosGenerales();
         }
+
+        private void barButtonItem9_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Hide();
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
+        }
     }
 }

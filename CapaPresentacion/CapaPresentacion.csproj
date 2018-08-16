@@ -267,6 +267,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="39191417_2292378327663271_5204588511130288128_n.ico" />
+    <None Include="Resources\Imagen1.png" />
+    <None Include="Resources\39254907_536538610106704_1136365578206838784_n.png" />
+    <None Include="Resources\Password_96px.png" />
+    <None Include="Resources\Password_48px.png" />
+    <None Include="Resources\Manager_48px.png" />
     <None Include="Resources\News_48px.png" />
     <None Include="Resources\Edit_48px.png" />
     <None Include="Resources\Cancel_48px.png" />

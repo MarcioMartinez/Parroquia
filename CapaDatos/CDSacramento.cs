@@ -223,7 +223,7 @@ namespace CapaDatos
                 cmd.Parameters.Add("@Id_Registro_Sacramento", SqlDbType.Int).Value = objS.Id_Registro_Sacramento;
                 cmd.Parameters.Add("@Id_Sacramento", SqlDbType.Int).Value = objS.Id_Sacramento;
                 cmd.Parameters.Add("@Fecha", SqlDbType.Date).Value = objS.Fecha;
-                cmd.Parameters.Add("@Num_Identidad", SqlDbType.Char, 15).Value = objS.Num_Identidad;
+                cmd.Parameters.Add("@Num_Identidad", SqlDbType.Char, 20).Value = objS.Num_Identidad;
                 cmd.Parameters.Add("@Id_Lugar", SqlDbType.Int).Value = objS.Id_Lugar;
                 cmd.Parameters.Add("@Numero_Libro", SqlDbType.Int).Value = objS.Numero_Libro;
                 cmd.Parameters.Add("@Numero_Pagina", SqlDbType.Int).Value = objS.Numero_Pagina;

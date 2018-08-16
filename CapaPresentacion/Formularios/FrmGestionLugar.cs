@@ -15,6 +15,7 @@ namespace CapaPresentacion
 {
     public partial class FrmGestionLugar : DevExpress.XtraEditors.XtraForm
     {
+        public Boolean llamado = false;
         public FrmGestionLugar()
         {
             InitializeComponent();
@@ -154,6 +155,16 @@ namespace CapaPresentacion
         {
             Limpiar();//Por que algunos controles tiene EditValue null, entonces le asignamos ""
             ListadoLugar();
+        }
+
+        public delegate void DoEvent();
+        public event DoEvent LlenarCbx;
+        private void FrmGestionLugar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (llamado)
+            {
+                LlenarCbx();
+            }
         }
     }
 }

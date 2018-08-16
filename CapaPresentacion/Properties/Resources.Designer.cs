@@ -73,6 +73,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _39254907_536538610106704_1136365578206838784_n {
+            get {
+                object obj = ResourceManager.GetObject("39254907_536538610106704_1136365578206838784_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4a128fea_77a0_4e81_b8c3_952be4dc4183 {
             get {
                 object obj = ResourceManager.GetObject("4a128fea-77a0-4e81-b8c3-952be4dc4183", resourceCulture);
@@ -113,9 +123,49 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagen1 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Manager_48px {
+            get {
+                object obj = ResourceManager.GetObject("Manager_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap News_48px {
             get {
                 object obj = ResourceManager.GetObject("News_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Password_48px {
+            get {
+                object obj = ResourceManager.GetObject("Password_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Password_96px {
+            get {
+                object obj = ResourceManager.GetObject("Password_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

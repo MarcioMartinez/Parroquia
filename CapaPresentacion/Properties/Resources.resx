@@ -121,19 +121,34 @@
   <data name="Edit_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edit_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="News_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\News_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="39191417_2292378327663271_5204588511130288128_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\39191417_2292378327663271_5204588511130288128_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="39254907_536538610106704_1136365578206838784_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\39254907_536538610106704_1136365578206838784_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Password_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Password_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manager_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Manager_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Password_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Password_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4a128fea-77a0-4e81-b8c3-952be4dc4183" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4a128fea-77a0-4e81-b8c3-952be4dc4183.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="general" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\general.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cancel_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancel_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="39191417_2292378327663271_5204588511130288128_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\39191417_2292378327663271_5204588511130288128_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="News_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\News_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Imagen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

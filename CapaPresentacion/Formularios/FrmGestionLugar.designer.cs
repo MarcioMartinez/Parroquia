@@ -72,13 +72,13 @@
             this.editarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 48);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Edit_48px;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
@@ -86,7 +86,7 @@
             // 
             this.eliminarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Cancel_48px;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -238,10 +238,13 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.gcDatos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmGestionLugar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión Lugar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGestionLugar_FormClosing);
             this.Load += new System.EventHandler(this.FrmGestionLugar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gcDatosLugar)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
