@@ -83,6 +83,26 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _39454303_1469338983168061_8464827241254092800_n {
+            get {
+                object obj = ResourceManager.GetObject("39454303_1469338983168061_8464827241254092800_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _39467339_669353403442935_8943626613409447936_n {
+            get {
+                object obj = ResourceManager.GetObject("39467339_669353403442935_8943626613409447936_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4a128fea_77a0_4e81_b8c3_952be4dc4183 {
             get {
                 object obj = ResourceManager.GetObject("4a128fea-77a0-4e81-b8c3-952be4dc4183", resourceCulture);
@@ -126,6 +146,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap Imagen1 {
             get {
                 object obj = ResourceManager.GetObject("Imagen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen11 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

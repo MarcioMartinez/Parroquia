@@ -41,27 +41,27 @@
             // txtContrasena
             // 
             this.txtContrasena.EditValue = "";
-            this.txtContrasena.Location = new System.Drawing.Point(404, 198);
+            this.txtContrasena.Location = new System.Drawing.Point(369, 161);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.txtContrasena.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasena.Properties.Appearance.Options.UseBackColor = true;
             this.txtContrasena.Properties.Appearance.Options.UseFont = true;
             this.txtContrasena.Properties.UseSystemPasswordChar = true;
-            this.txtContrasena.Size = new System.Drawing.Size(253, 32);
+            this.txtContrasena.Size = new System.Drawing.Size(230, 32);
             this.txtContrasena.TabIndex = 179;
             this.txtContrasena.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtContrasena_KeyDown);
             // 
             // txtUsuario
             // 
             this.txtUsuario.EditValue = "";
-            this.txtUsuario.Location = new System.Drawing.Point(404, 136);
+            this.txtUsuario.Location = new System.Drawing.Point(369, 110);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.txtUsuario.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Properties.Appearance.Options.UseBackColor = true;
             this.txtUsuario.Properties.Appearance.Options.UseFont = true;
-            this.txtUsuario.Size = new System.Drawing.Size(253, 32);
+            this.txtUsuario.Size = new System.Drawing.Size(230, 32);
             this.txtUsuario.TabIndex = 177;
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             // 
@@ -70,9 +70,9 @@
             this.btnIniciar.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.btnIniciar.Appearance.Options.UseBackColor = true;
             this.btnIniciar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciar.ImageOptions.Image")));
-            this.btnIniciar.Location = new System.Drawing.Point(522, 241);
+            this.btnIniciar.Location = new System.Drawing.Point(493, 199);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(125, 32);
+            this.btnIniciar.Size = new System.Drawing.Size(106, 32);
             this.btnIniciar.TabIndex = 182;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
@@ -82,7 +82,7 @@
             this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.Imagen1;
             this.pictureBox1.Location = new System.Drawing.Point(0, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(737, 340);
+            this.pictureBox1.Size = new System.Drawing.Size(671, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 183;
             this.pictureBox1.TabStop = false;
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 333);
+            this.ClientSize = new System.Drawing.Size(667, 273);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.txtUsuario);
