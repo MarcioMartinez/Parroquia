@@ -14,8 +14,8 @@ namespace CapaPresentacion.Reportes
         public RptConfirmacion(CERptConfirmacion obj)
         {
             InitializeComponent();
-            txtLugar.Text = "Parroquia " + obj.Parroquia;
-            txtSubtitulo.Text = txtSubtitulo.Text.Replace("p2", obj.Parroquia);
+            txtLugar.Text = Funciones.Funciones.nombreParroquia.ToUpper();
+            txtSubtitulo.Text = txtSubtitulo.Text.Replace("p2", Funciones.Funciones.nombreParroquia.ToUpper());
             txtFeligres.Text = obj.Feligres;
             txtFecha.Text = txtFecha.Text.Replace("p4", obj.Fecha.Day.ToString()).Replace("p5", obj.Fecha.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"))).Replace("p6", obj.Fecha.Year.ToString());
             txtR1.Rtf = txtR1.Rtf.Replace("p7", obj.Parroquia);

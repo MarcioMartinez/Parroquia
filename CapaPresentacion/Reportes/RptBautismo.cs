@@ -20,9 +20,9 @@ namespace CapaPresentacion.Reportes
 
         private void RptBautismo_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
         {
-            txtParroquiaLugar.Text = "Parroquia " + objx.Parroquia;
-            txtCertificacion.Text = "Certificación de " + objx.Sacramento;
-            txtR2.Text = txtR2.Text.Replace("p0", objx.Parroquia);
+            txtParroquiaLugar.Text = Funciones.Funciones.nombreParroquia.ToUpper();
+            txtCertificacion.Text = "CERTIFICACIÓN DE " + objx.Sacramento.ToUpper();
+            txtR2.Text = txtR2.Text.Replace("p0", Funciones.Funciones.nombreParroquia);
             txtR3.Rtf = txtR3.Rtf.Replace("p1", objx.NumeroBautismo);
             txtR3.Rtf = txtR3.Rtf.Replace("p2", objx.NumeroPagina);
             txtR3.Rtf = txtR3.Rtf.Replace("p3", objx.BajoNumero);

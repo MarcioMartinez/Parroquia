@@ -53,6 +53,7 @@ namespace CapaPresentacion.Formularios
             objDatosG = objDatos.Mostrar_Datos();
 
             lblNombreParroquia.Text = "Parroquia " + objDatosG.Nombre_Parroquia;
+            Funciones.Funciones.nombreParroquia = "Parroquia " + objDatosG.Nombre_Parroquia;
             this.Text = objDatosG.Nombre_Parroquia;
 
             MemoryStream ms = new MemoryStream((byte[])objDatosG.Logo);

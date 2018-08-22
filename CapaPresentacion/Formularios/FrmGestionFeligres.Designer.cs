@@ -165,13 +165,13 @@
             this.editarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(118, 48);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Edit_48px;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
@@ -179,7 +179,7 @@
             // 
             this.eliminarToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.Cancel_48px;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -324,6 +324,7 @@
             // 
             // chkEstado
             // 
+            this.chkEstado.EditValue = true;
             this.chkEstado.Location = new System.Drawing.Point(116, 416);
             this.chkEstado.Name = "chkEstado";
             this.chkEstado.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

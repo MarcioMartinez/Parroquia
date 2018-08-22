@@ -14,9 +14,9 @@ namespace CapaPresentacion.Reportes
         public RptMatrimonio(CERptMatrimonio obj)
         {
             InitializeComponent();
-            txtLugar.Text = "Parroquia " + obj.Parroquia;
+            txtLugar.Text = Funciones.Funciones.nombreParroquia.ToUpper();
             txtLugar2.Text = "Parroquia " + obj.Parroquia;
-            txtSubtitulo.Text = txtSubtitulo.Text.Replace("p2", obj.Parroquia);
+            txtSubtitulo.Text = txtSubtitulo.Text.Replace("p2", Funciones.Funciones.nombreParroquia.ToUpper());
             txtEmp.Text = txtEmp.Text.Replace("p1", obj.Empleado);
             txtNovia.Text = obj.Novia;
             txtNovio.Text = obj.Novio;

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using CapaNegocio;
 using CapaEntidad;
-
+using CapaPresentacion.Formularios;
 
 namespace CapaPresentacion
 {
@@ -247,9 +247,16 @@ namespace CapaPresentacion
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            /*FrmGestionCargo frm = new FrmGestionCargo();
+            FrmGestionCargo frm = new FrmGestionCargo();
+            frm.LlenarCbx += new FrmGestionCargo.DoEvent(LlenarComboCargo);
+            frm.llamado = true;
             frm.ShowDialog();
-            frm.Focus();*/
+            frm.Focus();
+        }
+
+        private void FrmGestionEmpleado_Validated(object sender, EventArgs e)
+        {
+            LlenarComboCargo();
         }
     }
 }

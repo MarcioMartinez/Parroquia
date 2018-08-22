@@ -255,6 +255,7 @@
             this.Name = "FrmGestionCargo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión Cargo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGestionCargo_FormClosing);
             this.Load += new System.EventHandler(this.FrmGestionCargo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gcDatos)).EndInit();
             this.gcDatos.ResumeLayout(false);

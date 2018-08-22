@@ -19,7 +19,7 @@ namespace CapaDatos
             {
                 SqlCommand cmd = new SqlCommand("Sp_Guardar_Lugar", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@Lugar", SqlDbType.VarChar, 15).Value = objC.Lugar;
+                cmd.Parameters.Add("@Lugar", SqlDbType.VarChar, 50).Value = objC.Lugar;
 
 
                 ConectarBD();
@@ -47,7 +47,7 @@ namespace CapaDatos
                 SqlCommand cmd = new SqlCommand("Sp_Actualizar_Lugar", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@IdLugar", SqlDbType.Int).Value = objC.Id_Lugar;
-                cmd.Parameters.Add("@Lugar", SqlDbType.VarChar, 15).Value = objC.Lugar;
+                cmd.Parameters.Add("@Lugar", SqlDbType.VarChar, 50).Value = objC.Lugar;
 
                 ConectarBD();
                 resultado = cmd.ExecuteNonQuery();

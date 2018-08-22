@@ -573,6 +573,7 @@
             this.Name = "FrmGestionEmpleado";
             this.Text = "Gestión Empleado";
             this.Load += new System.EventHandler(this.FrmGestionEmpleado_Load);
+            this.Validated += new System.EventHandler(this.FrmGestionEmpleado_Validated);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

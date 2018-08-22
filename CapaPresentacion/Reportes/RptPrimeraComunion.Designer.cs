@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RptPrimeraComunion));
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
-            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.txtSubtitulo = new DevExpress.XtraReports.UI.XRLabel();
-            this.XrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
-            this.pbLogo = new DevExpress.XtraReports.UI.XRPictureBox();
             this.XrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.XrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtHoy = new DevExpress.XtraReports.UI.XRRichText();
@@ -43,7 +38,13 @@
             this.txtR1 = new DevExpress.XtraReports.UI.XRRichText();
             this.txtFeligres = new DevExpress.XtraReports.UI.XRLabel();
             this.XrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.XrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
+            this.txtSubtitulo = new DevExpress.XtraReports.UI.XRLabel();
             this.txtLugar = new DevExpress.XtraReports.UI.XRLabel();
+            this.pbLogo = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR1)).BeginInit();
@@ -64,60 +65,6 @@
             this.Detail.Name = "Detail";
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // TopMargin
-            // 
-            this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.txtLugar,
-            this.txtSubtitulo,
-            this.XrLabel19,
-            this.pbLogo});
-            this.TopMargin.HeightF = 332.2917F;
-            this.TopMargin.Name = "TopMargin";
-            this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // BottomMargin
-            // 
-            this.BottomMargin.HeightF = 100F;
-            this.BottomMargin.Name = "BottomMargin";
-            this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // txtSubtitulo
-            // 
-            this.txtSubtitulo.Font = new System.Drawing.Font("Arial", 12F);
-            this.txtSubtitulo.LocationFloat = new DevExpress.Utils.PointFloat(97.70959F, 285.3775F);
-            this.txtSubtitulo.Name = "txtSubtitulo";
-            this.txtSubtitulo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtSubtitulo.SizeF = new System.Drawing.SizeF(482.2917F, 23F);
-            this.txtSubtitulo.StylePriority.UseFont = false;
-            this.txtSubtitulo.StylePriority.UseTextAlignment = false;
-            this.txtSubtitulo.Text = "PARROQUIA p2, DIÓCESIS DE CHOLUTECA";
-            this.txtSubtitulo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            // 
-            // XrLabel19
-            // 
-            this.XrLabel19.Font = new System.Drawing.Font("Arial", 20.25F);
-            this.XrLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
-            this.XrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(59.16795F, 224.9626F);
-            this.XrLabel19.Name = "XrLabel19";
-            this.XrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel19.SizeF = new System.Drawing.SizeF(560.8325F, 38.62503F);
-            this.XrLabel19.StylePriority.UseFont = false;
-            this.XrLabel19.StylePriority.UseForeColor = false;
-            this.XrLabel19.StylePriority.UseTextAlignment = false;
-            this.XrLabel19.Text = "CONSTANCIA DE PRIMERA COMUNIÓN";
-            this.XrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.pbLogo.LocationFloat = new DevExpress.Utils.PointFloat(268.9596F, 62.46418F);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.SizeF = new System.Drawing.SizeF(133.7498F, 134.4583F);
-            this.pbLogo.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // XrLine1
             // 
@@ -197,15 +144,79 @@
             this.XrLabel3.StylePriority.UseFont = false;
             this.XrLabel3.Text = "El infrascrito encargado del archivo de esta parroquia certifica que: ";
             // 
+            // TopMargin
+            // 
+            this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLine5,
+            this.XrLabel19,
+            this.txtSubtitulo,
+            this.txtLugar,
+            this.pbLogo});
+            this.TopMargin.HeightF = 332.2917F;
+            this.TopMargin.Name = "TopMargin";
+            this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // XrLabel19
+            // 
+            this.XrLabel19.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.XrLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
+            this.XrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(156.8761F, 222.8793F);
+            this.XrLabel19.Name = "XrLabel19";
+            this.XrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.XrLabel19.SizeF = new System.Drawing.SizeF(483.1239F, 38.62505F);
+            this.XrLabel19.StylePriority.UseFont = false;
+            this.XrLabel19.StylePriority.UseForeColor = false;
+            this.XrLabel19.StylePriority.UseTextAlignment = false;
+            this.XrLabel19.Text = "CONSTANCIA DE PRIMERA COMUNIÓN";
+            this.XrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // txtSubtitulo
+            // 
+            this.txtSubtitulo.Font = new System.Drawing.Font("Arial", 18F);
+            this.txtSubtitulo.LocationFloat = new DevExpress.Utils.PointFloat(156.8761F, 127.046F);
+            this.txtSubtitulo.Name = "txtSubtitulo";
+            this.txtSubtitulo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.txtSubtitulo.SizeF = new System.Drawing.SizeF(483.1239F, 23.00001F);
+            this.txtSubtitulo.StylePriority.UseFont = false;
+            this.txtSubtitulo.StylePriority.UseTextAlignment = false;
+            this.txtSubtitulo.Text = "DIÓCESIS DE CHOLUTECA";
+            this.txtSubtitulo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
             // txtLugar
             // 
-            this.txtLugar.Font = new System.Drawing.Font("Times New Roman", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.txtLugar.LocationFloat = new DevExpress.Utils.PointFloat(59.16796F, 28.75001F);
+            this.txtLugar.Font = new System.Drawing.Font("Times New Roman", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtLugar.LocationFloat = new DevExpress.Utils.PointFloat(156.8761F, 170.4151F);
             this.txtLugar.Name = "txtLugar";
             this.txtLugar.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtLugar.SizeF = new System.Drawing.SizeF(231.25F, 23F);
+            this.txtLugar.SizeF = new System.Drawing.SizeF(483.1239F, 30.29169F);
             this.txtLugar.StylePriority.UseFont = false;
+            this.txtLugar.StylePriority.UseTextAlignment = false;
             this.txtLugar.Text = "Parroquia [Lugar]";
+            this.txtLugar.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.pbLogo.LocationFloat = new DevExpress.Utils.PointFloat(11.66792F, 127.046F);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.SizeF = new System.Drawing.SizeF(133.7498F, 134.4583F);
+            this.pbLogo.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.HeightF = 100F;
+            this.BottomMargin.Name = "BottomMargin";
+            this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLine5
+            // 
+            this.xrLine5.LineWidth = 2;
+            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 305.7084F);
+            this.xrLine5.Name = "xrLine5";
+            this.xrLine5.SizeF = new System.Drawing.SizeF(650F, 4.083313F);
             // 
             // RptPrimeraComunion
             // 
@@ -235,9 +246,10 @@
         internal DevExpress.XtraReports.UI.XRRichText txtR1;
         internal DevExpress.XtraReports.UI.XRLabel txtFeligres;
         internal DevExpress.XtraReports.UI.XRLabel XrLabel3;
-        internal DevExpress.XtraReports.UI.XRLabel txtSubtitulo;
-        internal DevExpress.XtraReports.UI.XRLabel XrLabel19;
         internal DevExpress.XtraReports.UI.XRPictureBox pbLogo;
+        internal DevExpress.XtraReports.UI.XRLabel XrLabel19;
+        internal DevExpress.XtraReports.UI.XRLabel txtSubtitulo;
         internal DevExpress.XtraReports.UI.XRLabel txtLugar;
+        internal DevExpress.XtraReports.UI.XRLine xrLine5;
     }
 }

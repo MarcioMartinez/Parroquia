@@ -59,6 +59,7 @@
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.formattingRule1 = new DevExpress.XtraReports.UI.FormattingRule();
             this.formattingRule2 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR4)).BeginInit();
@@ -184,7 +185,7 @@
             this.txtR2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtR2.SizeF = new System.Drawing.SizeF(632.6666F, 23F);
             this.txtR2.StylePriority.UseFont = false;
-            this.txtR2.Text = "El infraescrito, encargado del Archivo de la Parroquia p0";
+            this.txtR2.Text = "El infraescrito, encargado del Archivo de la p0";
             // 
             // XrLabel16
             // 
@@ -290,6 +291,7 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLine5,
             this.pbLogo,
             this.txtParroquiaLugar,
             this.XrLabel27,
@@ -303,25 +305,27 @@
             // 
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
             this.pbLogo.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.pbLogo.LocationFloat = new DevExpress.Utils.PointFloat(29.41879F, 71.95853F);
+            this.pbLogo.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 55.29183F);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.SizeF = new System.Drawing.SizeF(125.2653F, 117.7916F);
+            this.pbLogo.SizeF = new System.Drawing.SizeF(144.6841F, 134.4582F);
             this.pbLogo.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // txtParroquiaLugar
             // 
-            this.txtParroquiaLugar.Font = new System.Drawing.Font("Times New Roman", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.txtParroquiaLugar.LocationFloat = new DevExpress.Utils.PointFloat(29.41879F, 31.25002F);
+            this.txtParroquiaLugar.Font = new System.Drawing.Font("Times New Roman", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtParroquiaLugar.LocationFloat = new DevExpress.Utils.PointFloat(169.2269F, 94.66664F);
             this.txtParroquiaLugar.Name = "txtParroquiaLugar";
             this.txtParroquiaLugar.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.txtParroquiaLugar.SizeF = new System.Drawing.SizeF(231.25F, 23F);
+            this.txtParroquiaLugar.SizeF = new System.Drawing.SizeF(453.0042F, 36.54172F);
             this.txtParroquiaLugar.StylePriority.UseFont = false;
+            this.txtParroquiaLugar.StylePriority.UseTextAlignment = false;
             this.txtParroquiaLugar.Text = "Parroquia [Lugar]";
+            this.txtParroquiaLugar.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // XrLabel27
             // 
-            this.XrLabel27.Font = new System.Drawing.Font("Arial", 12F);
-            this.XrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(170.3125F, 105.2885F);
+            this.XrLabel27.Font = new System.Drawing.Font("Arial", 18F);
+            this.XrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(169.15F, 55.29183F);
             this.XrLabel27.Name = "XrLabel27";
             this.XrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.XrLabel27.SizeF = new System.Drawing.SizeF(454.1667F, 23F);
@@ -332,12 +336,14 @@
             // 
             // txtCertificacion
             // 
-            this.txtCertificacion.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
-            this.txtCertificacion.LocationFloat = new DevExpress.Utils.PointFloat(170.3125F, 154.125F);
+            this.txtCertificacion.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.txtCertificacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
+            this.txtCertificacion.LocationFloat = new DevExpress.Utils.PointFloat(169.1499F, 142.6667F);
             this.txtCertificacion.Name = "txtCertificacion";
             this.txtCertificacion.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtCertificacion.SizeF = new System.Drawing.SizeF(453.0811F, 35.62506F);
             this.txtCertificacion.StylePriority.UseFont = false;
+            this.txtCertificacion.StylePriority.UseForeColor = false;
             this.txtCertificacion.StylePriority.UseTextAlignment = false;
             this.txtCertificacion.Text = "txtCertificacion";
             this.txtCertificacion.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
@@ -356,6 +362,13 @@
             // formattingRule2
             // 
             this.formattingRule2.Name = "formattingRule2";
+            // 
+            // xrLine5
+            // 
+            this.xrLine5.LineWidth = 2;
+            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 210.9167F);
+            this.xrLine5.Name = "xrLine5";
+            this.xrLine5.SizeF = new System.Drawing.SizeF(670.9999F, 4.083313F);
             // 
             // RptBautismo
             // 
@@ -411,5 +424,6 @@
         private DevExpress.XtraReports.UI.FormattingRule formattingRule1;
         private DevExpress.XtraReports.UI.FormattingRule formattingRule2;
         private DevExpress.XtraReports.UI.XRLabel txtCertificacion;
+        internal DevExpress.XtraReports.UI.XRLine xrLine5;
     }
 }

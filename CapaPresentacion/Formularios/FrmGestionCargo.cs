@@ -17,7 +17,11 @@ namespace CapaPresentacion.Formularios
         public FrmGestionCargo()
         {
             InitializeComponent();            
-        } 
+        }
+
+        public delegate void DoEvent();
+        public event DoEvent LlenarCbx;
+        public Boolean llamado = false;
 
         private void Limpiar()
         {
@@ -153,6 +157,13 @@ namespace CapaPresentacion.Formularios
         {            
             Limpiar();//Por que algunos controles tiene EditValue null, entonces le asignamos ""
             ListadoCargo();
+        }
+
+        private void FrmGestionCargo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (llamado)
+                LlenarCbx();
+
         }
     }
 }
