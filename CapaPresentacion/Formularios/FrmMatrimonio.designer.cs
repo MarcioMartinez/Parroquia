@@ -1038,6 +1038,7 @@
             this.ClientSize = new System.Drawing.Size(929, 455);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.gcDatos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMatrimonio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sacramento matrimonio";

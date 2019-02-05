@@ -17,5 +17,6 @@ namespace CapaEntidad
         public int Numero_Pagina { get; set; }
         public int Numero_Acta { get; set; }
         public int Id_Usuario { get; set; }
+        public String Nota_Marginal { get; set; }
     }
 }

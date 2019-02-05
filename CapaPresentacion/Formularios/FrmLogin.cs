@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using CapaNegocio;
@@ -14,6 +7,7 @@ namespace CapaPresentacion.Formularios
 {
     public partial class FrmLogin : DevExpress.XtraEditors.XtraForm
     {
+        public static Boolean error = false;
         public FrmLogin()
         {
             InitializeComponent();
@@ -30,6 +24,8 @@ namespace CapaPresentacion.Formularios
             {
                 DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = Properties.Settings.Default.Tema.Trim();
             }
+
+         
         }
 
         private Boolean Validar()
@@ -66,10 +62,19 @@ namespace CapaPresentacion.Formularios
                     Funciones.Funciones.idUsuario = objIniciarSesion.IniciarSesion(objLogin);
                     FrmPrincipal frm = new FrmPrincipal();
                     frm.txtUsuario.Caption = txtUsuario.Text.ToString().ToUpper();
-                    frm.Show();    
+                    frm.Show();
+                    error = false;
+                }
+                else if(objIniciarSesion.IniciarSesion(objLogin) == -1)
+                {
+                    FrmConfiguracion frm = new FrmConfiguracion();
+                    frm.Show();
+                    error = true;
+                    Close();
                 }
                 else
                 {
+                    error = false;
                     XtraMessageBox.Show("Usuario o contraseña incorrecto", "Parroquia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

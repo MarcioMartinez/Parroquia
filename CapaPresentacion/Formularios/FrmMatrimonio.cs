@@ -186,8 +186,8 @@ namespace CapaPresentacion.Formularios
         {
             CNSacramento objS = new CNSacramento();
 
-            slueNovia.Properties.DataSource = objS.ListadoFeligresSexo(1).Tables["Feligres"];
-            slueNovio.Properties.DataSource = objS.ListadoFeligresSexo(2).Tables["Feligres"];
+            slueNovia.Properties.DataSource = objS.ListadoFeligresSexo2(1).Tables["Feligres"];
+            slueNovio.Properties.DataSource = objS.ListadoFeligresSexo2(2).Tables["Feligres"];
 
             slueMadrinaNovio.Properties.DataSource = objS.ListadoFeligresSexo(1).Tables["Feligres"];
             sluePadrinoNovio.Properties.DataSource = objS.ListadoFeligresSexo(2).Tables["Feligres"];

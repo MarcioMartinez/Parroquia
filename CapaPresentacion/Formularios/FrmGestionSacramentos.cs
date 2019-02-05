@@ -69,6 +69,7 @@ namespace CapaPresentacion.Formularios
             txtNumLibro.EditValue = "";
             txtNumPagina.EditValue = "";
             txtNumActa.EditValue = "";
+            txtNotaMarginal.EditValue = "";
         }
         private void HabilitarControles(Boolean nuevo, Boolean guardar, Boolean actualizar, Boolean cancelar, Boolean group, Boolean grid)
         {
@@ -156,6 +157,12 @@ namespace CapaPresentacion.Formularios
                 return false;
             }
 
+            if (txtNotaMarginal.EditValue.Equals("") && lueSacramentos.ItemIndex == 0)
+            {
+                txtNotaMarginal.ErrorText = "Por favor escriba la nota marginal";
+                return false;
+            }
+
             return true;
         }
 
@@ -175,6 +182,7 @@ namespace CapaPresentacion.Formularios
             txtNumLibro.EditValue = objSacramento.Numero_Libro;
             txtNumPagina.EditValue = objSacramento.Numero_Pagina;
             txtNumActa.EditValue = objSacramento.Numero_Acta;
+            txtNotaMarginal.EditValue = objSacramento.Nota_Marginal == null ? "" : objSacramento.Nota_Marginal.ToString();
 
             slueFeligres.EditValue = objFeligres.Feligres_Num_Identidad.ToString().Trim();
 
@@ -324,7 +332,8 @@ namespace CapaPresentacion.Formularios
                         Numero_Libro = int.Parse(txtNumLibro.EditValue.ToString()),
                         Numero_Pagina = int.Parse(txtNumPagina.EditValue.ToString()),
                         Numero_Acta = int.Parse(txtNumActa.EditValue.ToString()),
-                        Id_Usuario = Funciones.Funciones.idUsuario
+                        Id_Usuario = Funciones.Funciones.idUsuario,
+                        Nota_Marginal = txtNotaMarginal.EditValue.ToString()
                     };
 
                     idRegistro = objInsertarRegistro.NuevoRegistroSacramento(objSacramento);
@@ -418,10 +427,15 @@ namespace CapaPresentacion.Formularios
         }
 
         private void lueSacramentos_TextChanged(object sender, EventArgs e)
-        {
-            if (lueSacramentos.ItemIndex == 1)
+        {   
+            if(lueSacramentos.ItemIndex == 0)
+            {
+                labelControl11.Visible = txtNotaMarginal.Visible = true;
+            }
+            else if (lueSacramentos.ItemIndex == 1)
             {
                 camposActivos(false);
+                labelControl11.Visible = txtNotaMarginal.Visible = !true;
             }
             else if (lueSacramentos.ItemIndex == 3)
             {
@@ -433,9 +447,11 @@ namespace CapaPresentacion.Formularios
                 LlenarCombobox();
                 LlenarGridSacramentos();
                 HabilitarControles(true, false, false, false, false, true);
+                labelControl11.Visible = txtNotaMarginal.Visible = !true;
             }
             else
             {
+                labelControl11.Visible = txtNotaMarginal.Visible = !true;
                 camposActivos(true);
             }
         }
@@ -458,7 +474,8 @@ namespace CapaPresentacion.Formularios
                     Numero_Libro = int.Parse(txtNumLibro.EditValue.ToString()),
                     Numero_Pagina = int.Parse(txtNumPagina.EditValue.ToString()),
                     Numero_Acta = int.Parse(txtNumActa.EditValue.ToString()),
-                    Id_Usuario = Funciones.Funciones.idUsuario
+                    Id_Usuario = Funciones.Funciones.idUsuario,
+                    Nota_Marginal = txtNotaMarginal.EditValue.ToString()
                 };
                 
                 idRegistro = int.Parse(txtIdRegistro.EditValue.ToString());

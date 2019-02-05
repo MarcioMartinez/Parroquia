@@ -23,6 +23,11 @@ namespace CapaNegocio
             return objS.ListadoFeligresSexo(idSexo);
         }
 
+        public DataSet ListadoFeligresSexo2(int idSexo)
+        {
+            return objS.ListadoFeligresSexo2(idSexo);
+        }
+
         public DataSet ListadoTodoFeligreses()
         {
             return objS.ListadoTodosFeligreses();

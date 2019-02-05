@@ -31,6 +31,7 @@ namespace CapaPresentacion.Reportes
             txtR4.Rtf = txtR4.Rtf.Replace("p6", objx.Fecha.ToString("MMMM", CultureInfo.CreateSpecificCulture("es")));
             txtR4.Rtf = txtR4.Rtf.Replace("p7", objx.Fecha.Year.ToString());
             txtR5.Rtf = txtR5.Rtf.Replace("p19", objx.Empleado);
+            txtNota.Text = objx.NotaMarginal.ToString();
             txtR6.Text = objx.Feligres;
             txtR7.Rtf = txtR7.Rtf.Replace("p9", objx.FechaNacimiento.Day.ToString()).Replace("p10", objx.FechaNacimiento.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"))).Replace("p11", objx.FechaNacimiento.Year.ToString());
 

@@ -128,7 +128,8 @@ namespace CapaDatos
                         Padrino = dr["Padrino"].ToString(),
                         Madrina = dr["Madrina"].ToString(),
                         Hoy = DateTime.Parse(dr["Hoy"].ToString()),
-                        Logo = dr.GetBoolean(14) ? (byte[])dr["Logo"] : null
+                        Logo = dr.GetBoolean(14) ? (byte[])dr["Logo"] : null,
+                        NotaMarginal = dr["Nota_Marginal"] == null ? "" : dr["Nota_Marginal"].ToString()
                     };
                 }
 

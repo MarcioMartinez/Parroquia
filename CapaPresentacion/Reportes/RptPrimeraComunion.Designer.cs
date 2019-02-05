@@ -39,12 +39,13 @@
             this.txtFeligres = new DevExpress.XtraReports.UI.XRLabel();
             this.XrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
             this.XrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtSubtitulo = new DevExpress.XtraReports.UI.XRLabel();
             this.txtLugar = new DevExpress.XtraReports.UI.XRLabel();
             this.pbLogo = new DevExpress.XtraReports.UI.XRPictureBox();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR1)).BeginInit();
@@ -147,21 +148,29 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPictureBox1,
             this.xrLine5,
             this.XrLabel19,
             this.txtSubtitulo,
             this.txtLugar,
             this.pbLogo});
-            this.TopMargin.HeightF = 332.2917F;
+            this.TopMargin.HeightF = 332F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLine5
+            // 
+            this.xrLine5.LineWidth = 2;
+            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 305.7084F);
+            this.xrLine5.Name = "xrLine5";
+            this.xrLine5.SizeF = new System.Drawing.SizeF(743.3758F, 2.083344F);
             // 
             // XrLabel19
             // 
             this.XrLabel19.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.XrLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
-            this.XrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(156.8761F, 222.8793F);
+            this.XrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(145.4177F, 222.8793F);
             this.XrLabel19.Name = "XrLabel19";
             this.XrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.XrLabel19.SizeF = new System.Drawing.SizeF(483.1239F, 38.62505F);
@@ -174,7 +183,7 @@
             // txtSubtitulo
             // 
             this.txtSubtitulo.Font = new System.Drawing.Font("Arial", 18F);
-            this.txtSubtitulo.LocationFloat = new DevExpress.Utils.PointFloat(156.8761F, 127.046F);
+            this.txtSubtitulo.LocationFloat = new DevExpress.Utils.PointFloat(145.4177F, 168.7126F);
             this.txtSubtitulo.Name = "txtSubtitulo";
             this.txtSubtitulo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtSubtitulo.SizeF = new System.Drawing.SizeF(483.1239F, 23.00001F);
@@ -186,7 +195,7 @@
             // txtLugar
             // 
             this.txtLugar.Font = new System.Drawing.Font("Times New Roman", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.txtLugar.LocationFloat = new DevExpress.Utils.PointFloat(156.8761F, 170.4151F);
+            this.txtLugar.LocationFloat = new DevExpress.Utils.PointFloat(145.4178F, 127.046F);
             this.txtLugar.Name = "txtLugar";
             this.txtLugar.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtLugar.SizeF = new System.Drawing.SizeF(483.1239F, 30.29169F);
@@ -211,12 +220,14 @@
             this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
-            // xrLine5
+            // xrPictureBox1
             // 
-            this.xrLine5.LineWidth = 2;
-            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 305.7084F);
-            this.xrLine5.Name = "xrLine5";
-            this.xrLine5.SizeF = new System.Drawing.SizeF(650F, 4.083313F);
+            this.xrPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox1.Image")));
+            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(628.5416F, 107.1042F);
+            this.xrPictureBox1.Name = "xrPictureBox1";
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(114.8342F, 171.9583F);
+            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // RptPrimeraComunion
             // 
@@ -224,7 +235,7 @@
             this.Detail,
             this.TopMargin,
             this.BottomMargin});
-            this.Margins = new System.Drawing.Printing.Margins(100, 100, 332, 100);
+            this.Margins = new System.Drawing.Printing.Margins(51, 51, 332, 100);
             this.Version = "17.1";
             ((System.ComponentModel.ISupportInitialize)(this.txtHoy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR2)).EndInit();
@@ -251,5 +262,6 @@
         internal DevExpress.XtraReports.UI.XRLabel txtSubtitulo;
         internal DevExpress.XtraReports.UI.XRLabel txtLugar;
         internal DevExpress.XtraReports.UI.XRLine xrLine5;
+        internal DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
     }
 }

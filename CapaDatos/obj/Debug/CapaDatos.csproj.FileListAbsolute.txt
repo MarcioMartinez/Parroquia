@@ -40,3 +40,10 @@ C:\Users\Marcio\Desktop\SRS\Parroquia\CapaDatos\bin\Debug\CapaEntidad.pdb
 C:\Users\Marcio\Desktop\SRS\Parroquia\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\Marcio\Desktop\SRS\Parroquia\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Marcio\Desktop\SRS\Parroquia\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaDatos\obj\Debug\CapaDatos.pdb

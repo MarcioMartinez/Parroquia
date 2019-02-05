@@ -58,7 +58,11 @@ namespace CapaPresentacion.Formularios
 
             MemoryStream ms = new MemoryStream((byte[])objDatosG.Logo);
             pELogo.Image = Image.FromStream(ms);
+            Funciones.Funciones.logo = objDatosG.Logo;
+            usa_logo = objDatosG.Usa_Logo;
         }
+
+        public static Boolean usa_logo = false;
 
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -162,6 +166,24 @@ namespace CapaPresentacion.Formularios
             Hide();
             FrmLogin frm = new FrmLogin();
             frm.Show();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmReporteSacramentos frm = new FrmReporteSacramentos(this);
+            frm.ShowDialog();
+        }
+
+        private void barButtonItem11_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmReporteBautismo frm = new FrmReporteBautismo(this);
+            frm.ShowDialog();
+        }
+
+        private void barButtonItem12_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmConfiguracion frm = new FrmConfiguracion();
+            frm.ShowDialog();
         }
     }
 }

@@ -35,7 +35,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                return 0;
+                return -1;
                 throw new Exception("Error al iniciar sesion", ex);
             }
             finally

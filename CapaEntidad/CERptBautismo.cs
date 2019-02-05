@@ -23,5 +23,7 @@ namespace CapaEntidad
         public String Madrina { get; set; }
         public DateTime Hoy { get; set; }
         public Byte[] Logo { get; set; }
+        public String NotaMarginal { get; set; }
+
     }
 }

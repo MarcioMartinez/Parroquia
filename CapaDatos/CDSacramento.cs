@@ -59,6 +59,31 @@ namespace CapaDatos
             }
         }
 
+        public DataSet ListadoFeligresSexo2(int idSexo)
+        {
+            DataSet ds = new DataSet();
+            SqlDataAdapter da;
+
+            try
+            {
+                ConectarBD();
+                da = new SqlDataAdapter("Sp_Feligres_Sexo2", cn);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.Add("@IdSexo", SqlDbType.Int).Value = idSexo;
+                da.Fill(ds, "Feligres");
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al solicitar los datos", ex);
+            }
+            finally
+            {
+                CerrarBD();
+                ds.Dispose();
+            }
+        }
+
         public bool ExisteRegistro(CESacramentoPorFeligres objS, int idSacramento)
         {
             SqlCommand cmd;            
@@ -196,6 +221,7 @@ namespace CapaDatos
                 cmd.Parameters.Add("@Numero_Pagina", SqlDbType.Int).Value = objS.Numero_Pagina;
                 cmd.Parameters.Add("@Numero_Acta", SqlDbType.Int).Value = objS.Numero_Acta;
                 cmd.Parameters.Add("@Id_Usuario", SqlDbType.Int).Value = objS.Id_Usuario;
+                cmd.Parameters.Add("@Nota_Marginal", SqlDbType.NVarChar).Value = objS.Nota_Marginal;
 
                 ConectarBD();
                 resultado = int.Parse(cmd.ExecuteScalar().ToString());
@@ -229,6 +255,7 @@ namespace CapaDatos
                 cmd.Parameters.Add("@Numero_Pagina", SqlDbType.Int).Value = objS.Numero_Pagina;
                 cmd.Parameters.Add("@Numero_Acta", SqlDbType.Int).Value = objS.Numero_Acta;
                 cmd.Parameters.Add("@Id_Usuario", SqlDbType.Int).Value = objS.Id_Usuario;
+                cmd.Parameters.Add("@Nota_Marginal", SqlDbType.NVarChar).Value = objS.Nota_Marginal;
 
                 ConectarBD();
                 resultado = cmd.ExecuteNonQuery();
@@ -400,6 +427,7 @@ namespace CapaDatos
                     objSacramento.Numero_Libro = int.Parse(dr["Numero_Libro"].ToString());
                     objSacramento.Numero_Pagina = int.Parse(dr["Numero_Pagina"].ToString());
                     objSacramento.Numero_Acta = int.Parse(dr["Numero_Acta"].ToString());
+                    objSacramento.Nota_Marginal = dr["Nota_Marginal"].ToString();
                 }
                 return objSacramento;
             }

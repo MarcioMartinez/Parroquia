@@ -14,7 +14,7 @@ namespace CapaDatos
         public SqlConnection cn;
         public Conexion()
         {
-            cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cn"].ConnectionString);
+            cn = new SqlConnection(ConfigurationManager.ConnectionStrings["CapaPresentacion.Properties.Settings.cn"].ConnectionString);
         }
 
         public void ConectarBD()

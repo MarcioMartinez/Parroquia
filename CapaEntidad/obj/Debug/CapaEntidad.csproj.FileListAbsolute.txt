@@ -27,3 +27,7 @@ C:\Users\Marcio\Desktop\SRS\Parroquia\CapaEntidad\bin\Debug\CapaEntidad.pdb
 C:\Users\Marcio\Desktop\SRS\Parroquia\CapaEntidad\obj\Debug\CapaEntidad.csprojResolveAssemblyReference.cache
 C:\Users\Marcio\Desktop\SRS\Parroquia\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\Marcio\Desktop\SRS\Parroquia\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Marcio\Desktop\PROYECTOS\SRS\Parroquia\CapaEntidad\obj\Debug\CapaEntidad.pdb

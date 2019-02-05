@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RptBautismo));
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.XrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
-            this.XrLine2 = new DevExpress.XtraReports.UI.XRLine();
             this.XrLine3 = new DevExpress.XtraReports.UI.XRLine();
             this.txtHoy = new DevExpress.XtraReports.UI.XRRichText();
             this.XrLine4 = new DevExpress.XtraReports.UI.XRLine();
@@ -52,6 +51,7 @@
             this.XrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.XrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
             this.pbLogo = new DevExpress.XtraReports.UI.XRPictureBox();
             this.txtParroquiaLugar = new DevExpress.XtraReports.UI.XRLabel();
             this.XrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
@@ -59,20 +59,22 @@
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.formattingRule1 = new DevExpress.XtraReports.UI.FormattingRule();
             this.formattingRule2 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
+            this.txtNota = new DevExpress.XtraReports.UI.XRRichText();
+            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.txtNota,
             this.XrLabel2,
-            this.XrLine2,
             this.XrLine3,
             this.txtHoy,
             this.XrLine4,
@@ -107,24 +109,17 @@
             this.XrLabel2.StylePriority.UseFont = false;
             this.XrLabel2.Text = "NOTA MARGINAL:";
             // 
-            // XrLine2
-            // 
-            this.XrLine2.LineWidth = 2;
-            this.XrLine2.LocationFloat = new DevExpress.Utils.PointFloat(169.1501F, 418.5318F);
-            this.XrLine2.Name = "XrLine2";
-            this.XrLine2.SizeF = new System.Drawing.SizeF(471.7271F, 2F);
-            // 
             // XrLine3
             // 
             this.XrLine3.LineWidth = 2;
-            this.XrLine3.LocationFloat = new DevExpress.Utils.PointFloat(29.41879F, 452.782F);
+            this.XrLine3.LocationFloat = new DevExpress.Utils.PointFloat(28.33331F, 510.0737F);
             this.XrLine3.Name = "XrLine3";
             this.XrLine3.SizeF = new System.Drawing.SizeF(613.3937F, 4.083313F);
             // 
             // txtHoy
             // 
             this.txtHoy.Font = new System.Drawing.Font("Arial", 12F);
-            this.txtHoy.LocationFloat = new DevExpress.Utils.PointFloat(28.33331F, 482.9488F);
+            this.txtHoy.LocationFloat = new DevExpress.Utils.PointFloat(38.22877F, 525.6572F);
             this.txtHoy.Name = "txtHoy";
             this.txtHoy.SerializableRtfString = resources.GetString("txtHoy.SerializableRtfString");
             this.txtHoy.SizeF = new System.Drawing.SizeF(613.3937F, 32.17908F);
@@ -133,14 +128,14 @@
             // XrLine4
             // 
             this.XrLine4.LineWidth = 2;
-            this.XrLine4.LocationFloat = new DevExpress.Utils.PointFloat(372.1938F, 532.8911F);
+            this.XrLine4.LocationFloat = new DevExpress.Utils.PointFloat(382.0893F, 575.5994F);
             this.XrLine4.Name = "XrLine4";
             this.XrLine4.SizeF = new System.Drawing.SizeF(270.6186F, 2F);
             // 
             // XrLabel3
             // 
             this.XrLabel3.Font = new System.Drawing.Font("Arial", 11F);
-            this.XrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(421.0148F, 545.6696F);
+            this.XrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(430.9103F, 588.3779F);
             this.XrLabel3.Name = "XrLabel3";
             this.XrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.XrLabel3.SizeF = new System.Drawing.SizeF(191.3207F, 23.00006F);
@@ -220,10 +215,10 @@
             // XrLabel24
             // 
             this.XrLabel24.Font = new System.Drawing.Font("Arial", 12F);
-            this.XrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(27.39573F, 289.2917F);
+            this.XrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(27.39574F, 289.2917F);
             this.XrLabel24.Name = "XrLabel24";
             this.XrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel24.SizeF = new System.Drawing.SizeF(70.99775F, 23F);
+            this.XrLabel24.SizeF = new System.Drawing.SizeF(81.4144F, 23F);
             this.XrLabel24.StylePriority.UseFont = false;
             this.XrLabel24.Text = "Padrinos";
             // 
@@ -257,10 +252,10 @@
             // txtR8
             // 
             this.txtR8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.txtR8.LocationFloat = new DevExpress.Utils.PointFloat(98.39347F, 289.2917F);
+            this.txtR8.LocationFloat = new DevExpress.Utils.PointFloat(108.8101F, 289.2917F);
             this.txtR8.Name = "txtR8";
             this.txtR8.SerializableRtfString = resources.GetString("txtR8.SerializableRtfString");
-            this.txtR8.SizeF = new System.Drawing.SizeF(525.0001F, 23F);
+            this.txtR8.SizeF = new System.Drawing.SizeF(514.5835F, 23F);
             this.txtR8.StylePriority.UseFont = false;
             // 
             // txtR7
@@ -291,6 +286,7 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPictureBox1,
             this.xrLine5,
             this.pbLogo,
             this.txtParroquiaLugar,
@@ -301,11 +297,18 @@
             this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
+            // xrLine5
+            // 
+            this.xrLine5.LineWidth = 2;
+            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 210.9167F);
+            this.xrLine5.Name = "xrLine5";
+            this.xrLine5.SizeF = new System.Drawing.SizeF(736.0001F, 4.083313F);
+            // 
             // pbLogo
             // 
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
             this.pbLogo.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.pbLogo.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 55.29183F);
+            this.pbLogo.LocationFloat = new DevExpress.Utils.PointFloat(8.914375F, 56.3335F);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.SizeF = new System.Drawing.SizeF(144.6841F, 134.4582F);
             this.pbLogo.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
@@ -313,7 +316,7 @@
             // txtParroquiaLugar
             // 
             this.txtParroquiaLugar.Font = new System.Drawing.Font("Times New Roman", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.txtParroquiaLugar.LocationFloat = new DevExpress.Utils.PointFloat(169.2269F, 94.66664F);
+            this.txtParroquiaLugar.LocationFloat = new DevExpress.Utils.PointFloat(154.761F, 56.3335F);
             this.txtParroquiaLugar.Name = "txtParroquiaLugar";
             this.txtParroquiaLugar.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtParroquiaLugar.SizeF = new System.Drawing.SizeF(453.0042F, 36.54172F);
@@ -325,7 +328,7 @@
             // XrLabel27
             // 
             this.XrLabel27.Font = new System.Drawing.Font("Arial", 18F);
-            this.XrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(169.15F, 55.29183F);
+            this.XrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(153.5985F, 99.04182F);
             this.XrLabel27.Name = "XrLabel27";
             this.XrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.XrLabel27.SizeF = new System.Drawing.SizeF(454.1667F, 23F);
@@ -338,7 +341,7 @@
             // 
             this.txtCertificacion.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.txtCertificacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
-            this.txtCertificacion.LocationFloat = new DevExpress.Utils.PointFloat(169.1499F, 142.6667F);
+            this.txtCertificacion.LocationFloat = new DevExpress.Utils.PointFloat(154.6841F, 143.7084F);
             this.txtCertificacion.Name = "txtCertificacion";
             this.txtCertificacion.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtCertificacion.SizeF = new System.Drawing.SizeF(453.0811F, 35.62506F);
@@ -363,12 +366,22 @@
             // 
             this.formattingRule2.Name = "formattingRule2";
             // 
-            // xrLine5
+            // txtNota
             // 
-            this.xrLine5.LineWidth = 2;
-            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 210.9167F);
-            this.xrLine5.Name = "xrLine5";
-            this.xrLine5.SizeF = new System.Drawing.SizeF(670.9999F, 4.083313F);
+            this.txtNota.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNota.LocationFloat = new DevExpress.Utils.PointFloat(27.4835F, 420.532F);
+            this.txtNota.Name = "txtNota";
+            this.txtNota.SerializableRtfString = resources.GetString("txtNota.SerializableRtfString");
+            this.txtNota.SizeF = new System.Drawing.SizeF(611.4584F, 89.54175F);
+            // 
+            // xrPictureBox1
+            // 
+            this.xrPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox1.Image")));
+            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(613.2492F, 33.04173F);
+            this.xrPictureBox1.Name = "xrPictureBox1";
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(112.7509F, 171.9583F);
+            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // RptBautismo
             // 
@@ -379,7 +392,7 @@
             this.FormattingRuleSheet.AddRange(new DevExpress.XtraReports.UI.FormattingRule[] {
             this.formattingRule1,
             this.formattingRule2});
-            this.Margins = new System.Drawing.Printing.Margins(90, 89, 215, 100);
+            this.Margins = new System.Drawing.Printing.Margins(60, 54, 215, 100);
             this.Version = "17.1";
             this.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.RptBautismo_BeforePrint);
             ((System.ComponentModel.ISupportInitialize)(this.txtHoy)).EndInit();
@@ -388,6 +401,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtR5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNota)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -398,7 +412,6 @@
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         internal DevExpress.XtraReports.UI.XRLabel XrLabel2;
-        internal DevExpress.XtraReports.UI.XRLine XrLine2;
         internal DevExpress.XtraReports.UI.XRLine XrLine3;
         internal DevExpress.XtraReports.UI.XRRichText txtHoy;
         internal DevExpress.XtraReports.UI.XRLine XrLine4;
@@ -425,5 +438,7 @@
         private DevExpress.XtraReports.UI.FormattingRule formattingRule2;
         private DevExpress.XtraReports.UI.XRLabel txtCertificacion;
         internal DevExpress.XtraReports.UI.XRLine xrLine5;
+        internal DevExpress.XtraReports.UI.XRRichText txtNota;
+        internal DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
     }
 }

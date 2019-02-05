@@ -32,12 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionSacramentos));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.gcDatos = new DevExpress.XtraEditors.GroupControl();
+            this.txtNotaMarginal = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.txtIdRegistro = new DevExpress.XtraEditors.TextEdit();
             this.slueEmpleado = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -74,6 +75,7 @@
             this.deFecha = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.txtIdRegistro = new DevExpress.XtraEditors.TextEdit();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
@@ -97,7 +99,7 @@
             this.btnVistaPrevia = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gcDatos)).BeginInit();
             this.gcDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIdRegistro.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotaMarginal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slueEmpleado.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slueMadrina.Properties)).BeginInit();
@@ -113,6 +115,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lueLugar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deFecha.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deFecha.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdRegistro.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcDatosSacramentos)).BeginInit();
@@ -124,12 +127,13 @@
             // 
             // gcDatos
             // 
+            this.gcDatos.Controls.Add(this.txtNotaMarginal);
+            this.gcDatos.Controls.Add(this.labelControl11);
             this.gcDatos.Controls.Add(this.simpleButton5);
             this.gcDatos.Controls.Add(this.simpleButton4);
             this.gcDatos.Controls.Add(this.simpleButton3);
             this.gcDatos.Controls.Add(this.simpleButton2);
             this.gcDatos.Controls.Add(this.simpleButton1);
-            this.gcDatos.Controls.Add(this.txtIdRegistro);
             this.gcDatos.Controls.Add(this.slueEmpleado);
             this.gcDatos.Controls.Add(this.slueMadrina);
             this.gcDatos.Controls.Add(this.sluePadrino);
@@ -157,12 +161,33 @@
             this.gcDatos.TabIndex = 0;
             this.gcDatos.Text = "Datos del sacramento";
             // 
+            // txtNotaMarginal
+            // 
+            this.txtNotaMarginal.Location = new System.Drawing.Point(212, 385);
+            this.txtNotaMarginal.Name = "txtNotaMarginal";
+            this.txtNotaMarginal.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotaMarginal.Properties.Appearance.Options.UseFont = true;
+            this.txtNotaMarginal.Size = new System.Drawing.Size(235, 53);
+            this.txtNotaMarginal.TabIndex = 218;
+            this.txtNotaMarginal.Visible = false;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(102, 386);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(104, 21);
+            this.labelControl11.TabIndex = 217;
+            this.labelControl11.Text = "Nota marginal";
+            this.labelControl11.Visible = false;
+            // 
             // simpleButton5
             // 
             this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.simpleButton5.Location = new System.Drawing.Point(452, 173);
+            this.simpleButton5.Location = new System.Drawing.Point(452, 146);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(26, 28);
             this.simpleButton5.TabIndex = 216;
@@ -173,7 +198,7 @@
             this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
             this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.simpleButton4.Location = new System.Drawing.Point(454, 214);
+            this.simpleButton4.Location = new System.Drawing.Point(454, 187);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(26, 28);
             this.simpleButton4.TabIndex = 215;
@@ -184,7 +209,7 @@
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(454, 104);
+            this.simpleButton3.Location = new System.Drawing.Point(454, 77);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(26, 28);
             this.simpleButton3.TabIndex = 214;
@@ -195,7 +220,7 @@
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(454, 280);
+            this.simpleButton2.Location = new System.Drawing.Point(454, 253);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(26, 28);
             this.simpleButton2.TabIndex = 213;
@@ -206,27 +231,16 @@
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(454, 246);
+            this.simpleButton1.Location = new System.Drawing.Point(454, 219);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(26, 28);
             this.simpleButton1.TabIndex = 212;
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // txtIdRegistro
-            // 
-            this.txtIdRegistro.EditValue = "";
-            this.txtIdRegistro.Location = new System.Drawing.Point(214, 20);
-            this.txtIdRegistro.Name = "txtIdRegistro";
-            this.txtIdRegistro.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdRegistro.Properties.Appearance.Options.UseFont = true;
-            this.txtIdRegistro.Size = new System.Drawing.Size(58, 28);
-            this.txtIdRegistro.TabIndex = 211;
-            this.txtIdRegistro.Visible = false;
-            // 
             // slueEmpleado
             // 
             this.slueEmpleado.EditValue = "";
-            this.slueEmpleado.Location = new System.Drawing.Point(212, 211);
+            this.slueEmpleado.Location = new System.Drawing.Point(212, 184);
             this.slueEmpleado.Name = "slueEmpleado";
             this.slueEmpleado.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F);
             this.slueEmpleado.Properties.Appearance.Options.UseFont = true;
@@ -313,7 +327,7 @@
             // slueMadrina
             // 
             this.slueMadrina.EditValue = "";
-            this.slueMadrina.Location = new System.Drawing.Point(212, 276);
+            this.slueMadrina.Location = new System.Drawing.Point(212, 249);
             this.slueMadrina.Name = "slueMadrina";
             this.slueMadrina.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F);
             this.slueMadrina.Properties.Appearance.Options.UseFont = true;
@@ -401,7 +415,7 @@
             // sluePadrino
             // 
             this.sluePadrino.EditValue = "";
-            this.sluePadrino.Location = new System.Drawing.Point(212, 245);
+            this.sluePadrino.Location = new System.Drawing.Point(212, 218);
             this.sluePadrino.Name = "sluePadrino";
             this.sluePadrino.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F);
             this.sluePadrino.Properties.Appearance.Options.UseFont = true;
@@ -489,7 +503,7 @@
             // slueFeligres
             // 
             this.slueFeligres.EditValue = "";
-            this.slueFeligres.Location = new System.Drawing.Point(214, 104);
+            this.slueFeligres.Location = new System.Drawing.Point(214, 77);
             this.slueFeligres.Name = "slueFeligres";
             this.slueFeligres.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F);
             this.slueFeligres.Properties.Appearance.Options.UseFont = true;
@@ -575,7 +589,7 @@
             // 
             // lueSacramentos
             // 
-            this.lueSacramentos.Location = new System.Drawing.Point(212, 61);
+            this.lueSacramentos.Location = new System.Drawing.Point(212, 34);
             this.lueSacramentos.Name = "lueSacramentos";
             this.lueSacramentos.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F);
             this.lueSacramentos.Properties.Appearance.Options.UseFont = true;
@@ -595,7 +609,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(88, 381);
+            this.labelControl10.Location = new System.Drawing.Point(88, 354);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(118, 21);
             this.labelControl10.TabIndex = 205;
@@ -604,7 +618,7 @@
             // txtNumActa
             // 
             this.txtNumActa.EditValue = "";
-            this.txtNumActa.Location = new System.Drawing.Point(212, 378);
+            this.txtNumActa.Location = new System.Drawing.Point(212, 351);
             this.txtNumActa.Name = "txtNumActa";
             this.txtNumActa.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumActa.Properties.Appearance.Options.UseFont = true;
@@ -616,7 +630,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(71, 347);
+            this.labelControl9.Location = new System.Drawing.Point(71, 320);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(135, 21);
             this.labelControl9.TabIndex = 203;
@@ -625,7 +639,7 @@
             // txtNumPagina
             // 
             this.txtNumPagina.EditValue = "";
-            this.txtNumPagina.Location = new System.Drawing.Point(212, 344);
+            this.txtNumPagina.Location = new System.Drawing.Point(212, 317);
             this.txtNumPagina.Name = "txtNumPagina";
             this.txtNumPagina.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumPagina.Properties.Appearance.Options.UseFont = true;
@@ -637,7 +651,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(88, 313);
+            this.labelControl8.Location = new System.Drawing.Point(88, 286);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(118, 21);
             this.labelControl8.TabIndex = 201;
@@ -646,7 +660,7 @@
             // txtNumLibro
             // 
             this.txtNumLibro.EditValue = "";
-            this.txtNumLibro.Location = new System.Drawing.Point(212, 310);
+            this.txtNumLibro.Location = new System.Drawing.Point(212, 283);
             this.txtNumLibro.Name = "txtNumLibro";
             this.txtNumLibro.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumLibro.Properties.Appearance.Options.UseFont = true;
@@ -658,7 +672,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(42, 279);
+            this.labelControl7.Location = new System.Drawing.Point(42, 252);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(164, 21);
             this.labelControl7.TabIndex = 198;
@@ -668,7 +682,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(61, 245);
+            this.labelControl4.Location = new System.Drawing.Point(61, 218);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(145, 21);
             this.labelControl4.TabIndex = 196;
@@ -678,7 +692,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(43, 211);
+            this.labelControl3.Location = new System.Drawing.Point(43, 184);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(163, 21);
             this.labelControl3.TabIndex = 194;
@@ -686,7 +700,7 @@
             // 
             // lueLugar
             // 
-            this.lueLugar.Location = new System.Drawing.Point(212, 174);
+            this.lueLugar.Location = new System.Drawing.Point(212, 147);
             this.lueLugar.Name = "lueLugar";
             this.lueLugar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F);
             this.lueLugar.Properties.Appearance.Options.UseFont = true;
@@ -705,7 +719,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(165, 177);
+            this.labelControl2.Location = new System.Drawing.Point(165, 150);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(41, 21);
             this.labelControl2.TabIndex = 192;
@@ -715,7 +729,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(162, 141);
+            this.labelControl5.Location = new System.Drawing.Point(162, 114);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(44, 21);
             this.labelControl5.TabIndex = 191;
@@ -724,7 +738,7 @@
             // deFecha
             // 
             this.deFecha.EditValue = null;
-            this.deFecha.Location = new System.Drawing.Point(212, 138);
+            this.deFecha.Location = new System.Drawing.Point(212, 111);
             this.deFecha.Name = "deFecha";
             this.deFecha.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F);
             this.deFecha.Properties.Appearance.Options.UseFont = true;
@@ -739,7 +753,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(62, 107);
+            this.labelControl1.Location = new System.Drawing.Point(62, 80);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(144, 21);
             this.labelControl1.TabIndex = 176;
@@ -749,11 +763,22 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(118, 64);
+            this.labelControl6.Location = new System.Drawing.Point(118, 37);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(88, 21);
             this.labelControl6.TabIndex = 187;
             this.labelControl6.Text = "Sacramento";
+            // 
+            // txtIdRegistro
+            // 
+            this.txtIdRegistro.EditValue = "";
+            this.txtIdRegistro.Location = new System.Drawing.Point(565, 22);
+            this.txtIdRegistro.Name = "txtIdRegistro";
+            this.txtIdRegistro.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdRegistro.Properties.Appearance.Options.UseFont = true;
+            this.txtIdRegistro.Size = new System.Drawing.Size(58, 28);
+            this.txtIdRegistro.TabIndex = 211;
+            this.txtIdRegistro.Visible = false;
             // 
             // panelControl2
             // 
@@ -1020,6 +1045,7 @@
             this.Controls.Add(this.gcDatosSacramentos);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.gcDatos);
+            this.Controls.Add(this.txtIdRegistro);
             this.Name = "FrmGestionSacramentos";
             this.Text = "Gestión sacramentos";
             this.Activated += new System.EventHandler(this.FrmGestionSacramentos_Activated);
@@ -1027,7 +1053,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcDatos)).EndInit();
             this.gcDatos.ResumeLayout(false);
             this.gcDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIdRegistro.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotaMarginal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slueEmpleado.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slueMadrina.Properties)).EndInit();
@@ -1043,6 +1069,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lueLugar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deFecha.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deFecha.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIdRegistro.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcDatosSacramentos)).EndInit();
@@ -1120,5 +1147,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.MemoEdit txtNotaMarginal;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
     }
 }
