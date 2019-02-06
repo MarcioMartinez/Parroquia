@@ -95,5 +95,10 @@ namespace CapaPresentacion.Formularios
                 btnIniciar.PerformClick();
             }
         }
+
+        private void FrmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

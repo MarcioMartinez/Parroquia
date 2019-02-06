@@ -39,13 +39,13 @@
             this.txtFeligres = new DevExpress.XtraReports.UI.XRLabel();
             this.XrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLine5 = new DevExpress.XtraReports.UI.XRLine();
             this.XrLabel19 = new DevExpress.XtraReports.UI.XRLabel();
             this.txtSubtitulo = new DevExpress.XtraReports.UI.XRLabel();
             this.txtLugar = new DevExpress.XtraReports.UI.XRLabel();
             this.pbLogo = new DevExpress.XtraReports.UI.XRPictureBox();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtR1)).BeginInit();
@@ -70,14 +70,14 @@
             // XrLine1
             // 
             this.XrLine1.LineWidth = 2;
-            this.XrLine1.LocationFloat = new DevExpress.Utils.PointFloat(186.753F, 410.5779F);
+            this.XrLine1.LocationFloat = new DevExpress.Utils.PointFloat(238.8363F, 410.578F);
             this.XrLine1.Name = "XrLine1";
             this.XrLine1.SizeF = new System.Drawing.SizeF(294.7809F, 2.966492F);
             // 
             // XrLabel6
             // 
             this.XrLabel6.Font = new System.Drawing.Font("Arial", 12F);
-            this.XrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(238.2129F, 427.5714F);
+            this.XrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(290.2962F, 427.5715F);
             this.XrLabel6.Name = "XrLabel6";
             this.XrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.XrLabel6.SizeF = new System.Drawing.SizeF(184.304F, 23F);
@@ -92,7 +92,7 @@
             this.txtHoy.LocationFloat = new DevExpress.Utils.PointFloat(0F, 291.7018F);
             this.txtHoy.Name = "txtHoy";
             this.txtHoy.SerializableRtfString = resources.GetString("txtHoy.SerializableRtfString");
-            this.txtHoy.SizeF = new System.Drawing.SizeF(650F, 18.83331F);
+            this.txtHoy.SizeF = new System.Drawing.SizeF(748F, 18.83331F);
             this.txtHoy.StylePriority.UseFont = false;
             // 
             // txtR2
@@ -126,7 +126,7 @@
             // 
             // txtFeligres
             // 
-            this.txtFeligres.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.txtFeligres.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.txtFeligres.LocationFloat = new DevExpress.Utils.PointFloat(34.37581F, 66.39665F);
             this.txtFeligres.Name = "txtFeligres";
             this.txtFeligres.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -159,6 +159,15 @@
             this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
+            // xrPictureBox1
+            // 
+            this.xrPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox1.Image")));
+            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(628.5416F, 107.1042F);
+            this.xrPictureBox1.Name = "xrPictureBox1";
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(114.8342F, 171.9583F);
+            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
+            // 
             // xrLine5
             // 
             this.xrLine5.LineWidth = 2;
@@ -171,13 +180,14 @@
             this.XrLabel19.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.XrLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(81)))), ((int)(((byte)(69)))));
             this.XrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(145.4177F, 222.8793F);
+            this.XrLabel19.Multiline = true;
             this.XrLabel19.Name = "XrLabel19";
             this.XrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.XrLabel19.SizeF = new System.Drawing.SizeF(483.1239F, 38.62505F);
+            this.XrLabel19.SizeF = new System.Drawing.SizeF(483.1239F, 82.82912F);
             this.XrLabel19.StylePriority.UseFont = false;
             this.XrLabel19.StylePriority.UseForeColor = false;
             this.XrLabel19.StylePriority.UseTextAlignment = false;
-            this.XrLabel19.Text = "CONSTANCIA DE PRIMERA COMUNIÓN";
+            this.XrLabel19.Text = "CERTIFICACIÓN DE PRIMERA COMUNIÓN";
             this.XrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // txtSubtitulo
@@ -219,15 +229,6 @@
             this.BottomMargin.Name = "BottomMargin";
             this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // xrPictureBox1
-            // 
-            this.xrPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox1.Image")));
-            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(628.5416F, 107.1042F);
-            this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(114.8342F, 171.9583F);
-            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // RptPrimeraComunion
             // 

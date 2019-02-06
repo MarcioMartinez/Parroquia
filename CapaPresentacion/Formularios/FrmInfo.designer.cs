@@ -46,6 +46,8 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.label9 = new System.Windows.Forms.Label();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -56,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,9 +75,9 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(12, 190);
+            this.label2.Location = new System.Drawing.Point(12, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(309, 32);
+            this.label2.Size = new System.Drawing.Size(309, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cristian Ariel Mondragon";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,9 +85,9 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(12, 51);
+            this.label3.Location = new System.Drawing.Point(12, 47);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(309, 31);
+            this.label3.Size = new System.Drawing.Size(309, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Fernando Miguel Sanchez";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -93,41 +96,41 @@
             // 
             this.label4.Location = new System.Drawing.Point(12, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(309, 35);
+            this.label4.Size = new System.Drawing.Size(309, 31);
             this.label4.TabIndex = 3;
             this.label4.Text = "Marcio Francisco Martinez";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(12, 86);
+            this.label5.Location = new System.Drawing.Point(12, 80);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(309, 31);
+            this.label5.Size = new System.Drawing.Size(309, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Walter Alcides Cruz";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(12, 226);
+            this.label6.Location = new System.Drawing.Point(12, 208);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(309, 32);
+            this.label6.Size = new System.Drawing.Size(309, 27);
             this.label6.TabIndex = 5;
             this.label6.Text = "Erick Ramon Gallardo";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(12, 121);
+            this.label7.Location = new System.Drawing.Point(12, 109);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(309, 32);
+            this.label7.Size = new System.Drawing.Size(309, 28);
             this.label7.TabIndex = 6;
             this.label7.Text = "Johan Gabriel Chevez";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(12, 157);
+            this.label8.Location = new System.Drawing.Point(12, 141);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(309, 29);
             this.label8.TabIndex = 7;
@@ -136,6 +139,7 @@
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.label9);
             this.layoutControl1.Controls.Add(this.label6);
             this.layoutControl1.Controls.Add(this.label8);
             this.layoutControl1.Controls.Add(this.label2);
@@ -146,7 +150,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(12, 44);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(333, 270);
+            this.layoutControl1.Size = new System.Drawing.Size(333, 280);
             this.layoutControl1.TabIndex = 8;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -161,10 +165,11 @@
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem6,
-            this.layoutControlItem7});
+            this.layoutControlItem7,
+            this.layoutControlItem8});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(333, 270);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(333, 280);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -172,41 +177,41 @@
             this.layoutControlItem1.Control = this.label4;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(313, 39);
+            this.layoutControlItem1.Size = new System.Drawing.Size(313, 35);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.label3;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 39);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 35);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(313, 35);
+            this.layoutControlItem2.Size = new System.Drawing.Size(313, 33);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.label5;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 74);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 68);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(313, 35);
+            this.layoutControlItem3.Size = new System.Drawing.Size(313, 29);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.label7;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 109);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 97);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(313, 36);
+            this.layoutControlItem4.Size = new System.Drawing.Size(313, 32);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.label8;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 145);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 129);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(313, 33);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
@@ -215,20 +220,39 @@
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.label2;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 178);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 162);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(313, 36);
+            this.layoutControlItem6.Size = new System.Drawing.Size(313, 34);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.label6;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 214);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 196);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(313, 36);
+            this.layoutControlItem7.Size = new System.Drawing.Size(313, 31);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(12, 239);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(309, 29);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Ing. Oscar Omar Pineda";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.label9;
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 227);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(313, 33);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextVisible = false;
             // 
             // FrmInfo
             // 
@@ -237,7 +261,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 315);
+            this.ClientSize = new System.Drawing.Size(358, 326);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -247,7 +271,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Equipo de Desarollo";
+            this.Text = "Equipo de Desarrollo";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
@@ -258,6 +282,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,5 +306,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private System.Windows.Forms.Label label9;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
     }
 }

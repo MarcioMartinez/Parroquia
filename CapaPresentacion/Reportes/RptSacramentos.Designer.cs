@@ -95,37 +95,35 @@
             // xrTableCell8
             // 
             this.xrTableCell8.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Sp_Mostrar_Todo_Sacramento_Reporte.Fecha", "{0:d/M/yyyy}")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Sp_Mostrar_Todo_Sacramento_Reporte.NombreCompleto")});
             this.xrTableCell8.Font = new System.Drawing.Font("Tahoma", 12F);
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 0, 0, 0, 100F);
             this.xrTableCell8.StylePriority.UseFont = false;
             this.xrTableCell8.StylePriority.UsePadding = false;
-            this.xrTableCell8.Weight = 0.15384615384615386D;
+            this.xrTableCell8.Weight = 0.72927576177490361D;
             // 
             // xrTableCell11
             // 
             this.xrTableCell11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Sp_Mostrar_Todo_Sacramento_Reporte.Lugar")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Sp_Mostrar_Todo_Sacramento_Reporte.Fecha", "{0:d/M/yyyy}")});
             this.xrTableCell11.Font = new System.Drawing.Font("Tahoma", 12F);
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 0, 0, 0, 100F);
             this.xrTableCell11.StylePriority.UseFont = false;
             this.xrTableCell11.StylePriority.UsePadding = false;
-            this.xrTableCell11.Text = "xrTableCell4";
-            this.xrTableCell11.Weight = 0.24765299854396466D;
+            this.xrTableCell11.Weight = 0.15385090701395976D;
             // 
             // xrTableCell12
             // 
             this.xrTableCell12.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Sp_Mostrar_Todo_Sacramento_Reporte.NombreCompleto")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Sp_Mostrar_Todo_Sacramento_Reporte.Lugar")});
             this.xrTableCell12.Font = new System.Drawing.Font("Tahoma", 12F);
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 0, 0, 0, 100F);
             this.xrTableCell12.StylePriority.UseFont = false;
             this.xrTableCell12.StylePriority.UsePadding = false;
-            this.xrTableCell12.Text = "xrTableCell5";
-            this.xrTableCell12.Weight = 0.8328204979363415D;
+            this.xrTableCell12.Weight = 0.35119298153759659D;
             // 
             // TopMargin
             // 
@@ -178,9 +176,9 @@
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
-            this.xrTableCell1.Text = "Fecha";
+            this.xrTableCell1.Text = "Feligres";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell1.Weight = 0.49990370841064485D;
+            this.xrTableCell1.Weight = 2.3696907464820702D;
             // 
             // xrTableCell2
             // 
@@ -188,9 +186,9 @@
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            this.xrTableCell2.Text = "Lugar";
+            this.xrTableCell2.Text = "Fecha";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell2.Weight = 0.80471732183806965D;
+            this.xrTableCell2.Weight = 0.49991932860613342D;
             // 
             // xrTableCell3
             // 
@@ -200,9 +198,9 @@
             this.xrTableCell3.StylePriority.UseBorderWidth = false;
             this.xrTableCell3.StylePriority.UseFont = false;
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
-            this.xrTableCell3.Text = "Feligres";
+            this.xrTableCell3.Text = "Lugar";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell3.Weight = 2.706146744527592D;
+            this.xrTableCell3.Weight = 1.1411576996881025D;
             // 
             // txtCertificacion
             // 

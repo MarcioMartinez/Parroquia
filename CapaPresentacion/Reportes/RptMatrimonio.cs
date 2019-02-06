@@ -15,7 +15,7 @@ namespace CapaPresentacion.Reportes
         {
             InitializeComponent();
             txtLugar.Text = Funciones.Funciones.nombreParroquia.ToUpper();
-            txtLugar2.Text = "Parroquia " + obj.Parroquia;
+            txtLugar2.Text = "" + obj.Parroquia;
             txtSubtitulo.Text = txtSubtitulo.Text.Replace("p2", Funciones.Funciones.nombreParroquia.ToUpper());
             txtEmp.Text = txtEmp.Text.Replace("p1", obj.Empleado);
             txtNovia.Text = obj.Novia;
