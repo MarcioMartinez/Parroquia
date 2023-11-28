@@ -13,6 +13,11 @@ namespace CapaDatos
     {
         public int IniciarSesion(CELogin objLogin)
         {
+            /*
+                Este es el procedimiento para iniciar sesion
+                InicisarSesion hace un llamado a un SP enviandole los dos parametros (Usuario y Contrase~na)
+                y el resultado es el Id del usuario si 'este existe, si no devuelve cero
+            */
             SqlCommand cmd;
             SqlDataReader dr;
             try
