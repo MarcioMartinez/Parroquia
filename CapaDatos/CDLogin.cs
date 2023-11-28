@@ -13,6 +13,9 @@ namespace CapaDatos
     {
         public int IniciarSesion(CELogin objLogin)
         {
+            /*
+                Este es el procedimiento para iniciar sesion
+            */
             SqlCommand cmd;
             SqlDataReader dr;
             try
